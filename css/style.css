@@ -739,30 +739,4 @@ text-decoration: none;
 	margin-top: 50px;
 	text-transform: uppercase;
 }
-.nav_header-list li {
-	width: 100%;
-	display: block;
-	font-size: 12px;
-}
-.nav_header-list a {
-	display: block;
-	font-size: 8px;
-}
-.toggle-button {
-text-align: center;
-display: block;
-cursor: pointer;
-color: #000;
-}
-.toggle-button:after {
-	content: attr(data-open);
-	display: block;
-}
-#menu-checkbox:checked + nav[rol="navigation"] .nav_header-list {
-	display: block;
-}
-}
-
-@media screen and ( max-width: 420px) {
-
 }

@@ -60,7 +60,12 @@
 	</div>
 </div>
 	</main>
+	<section class="test_fon">
 	<section class="mobile_page">
+		<div class="gam-wrapper">
+		<div class="gam">
+		</div>
+	</div>
 			<h1>Бизнес-тренинг</h1>
 			<p>«Лидерство и управление другими»</p>
 			<div class="coahc_name-page">
@@ -69,6 +74,7 @@
 			</div>
 			<div class="link_center"><a href="#" class="link">Узнать подробнее</a></div>
 	</section>
+</section>
 	<div class="conteiner">
 		<hr>
 		<h2 class="chart_title"><span>1000</span> ВЫПУСКНИКОВ</h2>
@@ -376,6 +382,11 @@ $('.center').slick({
     }
   ]
 });
+	</script>
+	<script>
+		document.querySelector('.gam-wrapper').onclick = function(){
+			document.querySelector('.gam').classList.toggle('gam-active');
+		}
 	</script>
 </body>
 </html>

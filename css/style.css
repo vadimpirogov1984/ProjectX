@@ -682,39 +682,42 @@ text-decoration: none;
 }
 
 
-@media (max-width: 360px) {
+@media (max-width: 330px) {
 .main_page {
 	display: none;
 }
 .header {
 	display: none;
 }
+.test_fon {
+	background-image: url(../img/mobcoach.png);
+}
 .mobile_page {
+	padding-left: 10px;
+	padding-top: 10px;
 	display: block;
-	padding-top: 60px;
-	
 	background-color: rgba(0, 47, 125, 0.7);
+
 	min-height: 400px;
 }
 .mobile_page p {
 	font-weight: bold;
-	font-size: 24px;
+	font-size: 22px;
 	line-height: 36px;
 	color: #FFFFFF;
 	text-transform: uppercase;
-	padding-left: 10px;
 }
 .mobile_page h1 {
+	padding-top: 20px;
 	font-weight: bold;
 	font-size: 24px;
 	line-height: 28px;
 	color: #FFFFFF;
-	padding-left: 10px;
 }
 .coahc_name-page p {
 	font-size: 12px;
 	font-weight: normal;
-	margin-left: 200px;
+	margin-left: 180px;
 	text-transform: none;
 	line-height: 18px;
 }
@@ -722,21 +725,71 @@ text-decoration: none;
 	font-weight: 500;
 	font-size: 16px;
 	color: #FFFFFF;
-	margin-left: 206px;
+	margin-left: 180px;
 
 }
 .link {
 	font-weight: bold;
-	font-size: 14px;
-	line-height: 19px;
+	font-size: 11px;
+	line-height: 15px;
 	color: #FFFFFF;
 	border: 1px solid #019ED3;
 	border-radius: 5px;
 	background-color: #019ED3;
 	text-decoration: none;
-	padding: 20px 30px;
+	padding: 15px 20px;
 	text-align: center;
 	margin-top: 50px;
 	text-transform: uppercase;
+}
+.gam {
+	position: relative;
+	width: 30px;
+	height: 5px;
+	background-color: #000;
+
+}
+.gam::after {
+	position: absolute;
+	left: 0;
+	top: 10px;
+	content: " ";
+	width: 30px;
+	height: 5px;
+	background-color: #000;
+	display: block;
+	transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+}
+.gam::before {
+	position: absolute;
+	left: 0;
+	top: -10px;
+	content: " ";
+	width: 30px;
+	height: 5px;
+	background-color: #000;
+	display: block;
+	transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+}
+.gam.gam-active {
+	background-color: transparent;
+}
+.gam.gam-active::before {
+	transform: rotate(45deg);
+	top: 0;
+	transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+}
+.gam.gam-active::after {
+	transform: rotate(-45deg);
+	top: 0;
+	transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+}
+.gam-wrapper {
+	width: 30px;
+	height: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
 }
 }

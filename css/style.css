@@ -12,8 +12,14 @@ ul {
 
 /* Адаптив для планшета */
 
-
-
+body.is-mobmenu-open {
+    overflow: hidden;
+}
+body.is-mobmenu-open .mobile_main {
+    opacity: 1;
+    z-index: 2;
+   top: 0;
+}
 
 @media (max-width: 1024px) {
 .logo {
@@ -697,8 +703,8 @@ text-decoration: none;
 	padding-top: 10px;
 	display: block;
 	background-color: rgba(0, 47, 125, 0.7);
-
 	min-height: 400px;
+	z-index: 1;
 }
 .mobile_page p {
 	font-weight: bold;
@@ -725,8 +731,12 @@ text-decoration: none;
 	font-weight: 500;
 	font-size: 16px;
 	color: #FFFFFF;
+	padding-top: 30px;
 	margin-left: 180px;
 
+}
+.coahc_name-page {
+	margin-top: 50px;
 }
 .link {
 	font-weight: bold;
@@ -740,6 +750,7 @@ text-decoration: none;
 	padding: 15px 20px;
 	text-align: center;
 	margin-top: 50px;
+	margin-bottom: 20px;
 	text-transform: uppercase;
 }
 .gam {
@@ -791,5 +802,70 @@ text-decoration: none;
 	justify-content: center;
 	align-items: center;
 
+}
+.mobile_main {
+	
+	opacity: 0;
+	transition: all 0.5s ease;
+	padding-top: 30px;
+	background: #002F7D;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	font-size: 24px;
+	font-weight: bold;
+	color: #000000;
+} 
+.mobile_nav-list li {
+	list-style: none;
+	padding-top: 30px;
+	text-decoration: none;
+}
+.mobile_nav-list a {
+	text-decoration: none;
+	color: #000000;
+
+}
+.msocial_icon-list {
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+.msocial_icon-list li {
+	padding: 20px;
+	list-style: none;
+}
+.mobile_page {
+	position: relative;
+	z-index: 2;
+}
+.mobile_main {
+width: 100%;
+max-height: 420px;
+position: absolute;
+z-index: 1;
+}
+.bis_tre {
+	padding-top: 40px;
+}
+.block_chart {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 30px;
+
+}
+.btn_close {
+display: block;
+background-color: #002F7D;
+border: none;
+margin-left: 250px;
+
+
+}
+.btn_close:hover {
+	border: none;
 }
 }

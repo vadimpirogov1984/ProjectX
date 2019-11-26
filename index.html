@@ -62,7 +62,7 @@
 	</main>
 	<section class="test_fon">
 	<section class="mobile_page">
-		<div class="gam-wrapper">
+		<div class="gam-wrapper js-mobmenu-open">
 		<div class="gam">
 		</div>
 	</div>
@@ -75,6 +75,25 @@
 			<div class="link_center"><a href="#" class="link">Узнать подробнее</a></div>
 	</section>
 </section>
+<div class="mobile_main">
+			<button class="btn_close js-mobmenu-close"><img src="img/close.svg"></button>
+		<img src="img/Logo2.png" class="mob_logo">
+	<nav class="mobile_nav">
+		<ul class="mobile_nav-list">
+			<li><a href="#">Курсы</a></li>
+			<li><a href="#">О тренере</a></li>
+			<li><a href="#">Отзывы</a></li>
+			<li><a href="#">Стоимость</a></li>
+		</ul>
+	</nav>
+	<div class="msocial_icon">
+	<ul class="msocial_icon-list">
+		<li><a href="https://facebook.com"><img src="img/facebook.png" alt=""></a></li>
+		<li><a href="https://twitter.com/"><img src="img/twitter.png" alt=""></a></li>
+		<li><a href=".ru"><img src="img/instagram.png" alt=""></a></li>
+	</ul>
+	</div>
+</div>
 	<div class="conteiner">
 		<hr>
 		<h2 class="chart_title"><span>1000</span> ВЫПУСКНИКОВ</h2>
@@ -387,6 +406,20 @@ $('.center').slick({
 		document.querySelector('.gam-wrapper').onclick = function(){
 			document.querySelector('.gam').classList.toggle('gam-active');
 		}
+	</script>
+	<script>
+		  if($('body').hasClass('is-mobmenu-open')) {
+            $('body').removeClass('is-mobmenu-open');
+        }
+          //открытие мобменю
+    $('.js-mobmenu-open').on('click', function() {
+        $('body').addClass('is-mobmenu-open');
+    });
+
+    //закрытие мобменю
+    $('.js-mobmenu-close').on('click', function() {
+        $('body').removeClass('is-mobmenu-open');
+    });
 	</script>
 </body>
 </html>

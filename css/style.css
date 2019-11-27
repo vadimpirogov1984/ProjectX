@@ -1,4 +1,4 @@
-
+	
 /* header*/
 body {
 	font-family: 'Roboto Slab', serif;
@@ -68,7 +68,9 @@ body.is-mobmenu-open .mobile_main {
 	margin-top: 20px;
 	margin-bottom: 20px;
 }
-
+.mobile_main {
+	display: none;
+}
 .logo {
 	position: relative;
 	width: 274px;
@@ -376,7 +378,9 @@ font-size: 14px;
 
 
 /* Гарантия */
-
+.mobile_guarantee {
+	display: none;
+}
 .block_guarantee {
 	display: flex;
 	flex-direction: column;
@@ -688,7 +692,7 @@ text-decoration: none;
 }
 
 
-@media (max-width: 330px) {
+@media (max-width: 420px) {
 .main_page {
 	display: none;
 }
@@ -703,7 +707,7 @@ text-decoration: none;
 	padding-top: 10px;
 	display: block;
 	background-color: rgba(0, 47, 125, 0.7);
-	min-height: 400px;
+	min-height: 600px;
 	z-index: 1;
 }
 .mobile_page p {
@@ -720,10 +724,13 @@ text-decoration: none;
 	line-height: 28px;
 	color: #FFFFFF;
 }
+.mobile_page-title {
+margin-top: 100px;
+}
 .coahc_name-page p {
 	font-size: 12px;
 	font-weight: normal;
-	margin-left: 180px;
+	margin-left: 200px;
 	text-transform: none;
 	line-height: 18px;
 }
@@ -732,11 +739,11 @@ text-decoration: none;
 	font-size: 16px;
 	color: #FFFFFF;
 	padding-top: 30px;
-	margin-left: 180px;
+	margin-left: 200px;
 
 }
 .coahc_name-page {
-	margin-top: 50px;
+	margin-top: 60px;
 }
 .link {
 	font-weight: bold;
@@ -749,8 +756,8 @@ text-decoration: none;
 	text-decoration: none;
 	padding: 15px 20px;
 	text-align: center;
-	margin-top: 50px;
-	margin-bottom: 20px;
+	margin-top: 70px;
+	
 	text-transform: uppercase;
 }
 .gam {
@@ -850,13 +857,7 @@ z-index: 1;
 .bis_tre {
 	padding-top: 40px;
 }
-.block_chart {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin-top: 30px;
 
-}
 .btn_close {
 display: block;
 background-color: #002F7D;
@@ -865,7 +866,97 @@ margin-left: 250px;
 
 
 }
-.btn_close:hover {
-	border: none;
+
+.block_chart-dream,
+.block_chart-bis,
+.block_chart-income {
+	margin-top: 40px;
+}
+.chart_title {
+	margin-top: 30px;
+}
+.title_page {
+	margin-top: 20px;
+	font-size: 24px;
+}
+.block_opportunity-item:last-child {
+	display: none;
+}
+.block_opportunity {
+	margin-top: 30px;
+}
+.link_want {
+	font-size: 16px;
+	padding: 20px 40px;
+}
+.about_img {
+	width: 180px;
+	height: 180px;
+	border-radius: 50%;
+}
+.block_chart,
+.block_result,
+.about_coach {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 30px;
+}
+.about_coach-img {
+	margin: 0;
+}
+.name_coach-text span {
+	font-size: 28px;
+}
+.about_coach-certificate_list:nth-child(2) {
+	display: none;
+}
+.certificate_img {
+	width: 120px;
+	height: 180px;
+}
+
+.result_img {
+	width: 140px;
+	height: 120px;
+}
+.block_result-item {
+	font-size: 18px;
+	margin-top: 20px;
+}
+.block_guarantee {
+	display: none;
+
+}
+.mobile_guarantee h4 {
+font-size: 22px;
+font-weight: bold;
+text-align: center;
+}
+.mobile_guarantee {
+font-size: 16px;
+line-height: 22px;
+}
+.mobile_guarantee span {
+font-size: 18px;
+font-weight: bold;
+color: #019ED3; 
+}
+.map {
+	display: none;
+}
+.block_footer-content {
+display: none;
+}
+.footer_addres {
+	display: none;
+}
+.footer_info {
+		display: flex;
+		flex-direction: column-reverse;
+		align-items: center;
+		font-size: 14px;
+		line-height: 16px;
+		padding-top: 20px;
 }
 }

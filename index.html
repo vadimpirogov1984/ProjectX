@@ -23,10 +23,10 @@
 	</div>
 	<nav class="nav_header">
 		<ul class="nav_header-list">
-			<li><a href="#">Курсы</a></li>
-			<li><a href="#">О тренере</a></li>
-			<li><a href="#">Отзывы</a></li>
-			<li><a href="#">Стоимость</a></li>
+			<li><a href="#courses">Курсы</a></li>
+			<li><a href="#about_coach">О тренере</a></li>
+			<li><a href="#reviews">Отзывы</a></li>
+			<li><a href="#price">Стоимость</a></li>
 		</ul>
 	</nav>
 	</header>
@@ -80,10 +80,10 @@
 		<img src="img/Logo2.png" class="mob_logo">
 	<nav class="mobile_nav">
 		<ul class="mobile_nav-list">
-			<li><a href="#">Курсы</a></li>
-			<li><a href="#">О тренере</a></li>
-			<li><a href="#">Отзывы</a></li>
-			<li><a href="#">Стоимость</a></li>
+			<li><a href="#courses">Курсы</a></li>
+			<li><a href="#about_coach">О тренере</a></li>
+			<li><a href="#reviews">Отзывы</a></li>
+			<li><a href="#price">Стоимость</a></li>
 		</ul>
 	</nav>
 	<div class="msocial_icon">
@@ -135,13 +135,13 @@
 	</div>
 </div>
 	<div class="conteiner">
-			<h2 class="title_page">О тренере</h2>
+			<h2 class="title_page" id="about_coach">О тренере</h2>
 			<div class="about_coach">
 			<div class="about_coach-img">
-				<img src="img/Aboutcoach.png" alt="">
+				<img src="img/Aboutcoach.png" alt="" class="about_img">
 			</div>
 			<div class="about_coach-text">
-				<p class="name_coach-text">Сергей Штейн - мастер слова и дела.</p> 
+				<p class="name_coach-text"><span>Сергей Штейн </span>- мастер слова и дела.</p> 
 
 				<p>Его книга “Начни новую жизнь с понедельника” стала бестселлером в 2018 году. Продана тиражом более <span>550 000</span> экземпляров, а тренинг “Лидерство и управление другими” был признан лучшим, по версии журнала “Эксперт” 2018 для бизнеса.</p>
 
@@ -152,13 +152,13 @@
 		</div>
 			<div class="about_coach-certificate">
 				<div class="about_coach-certificate_list"> 
-				<img src="img/cert1.png" alt="">
+				<img src="img/cert1.png" alt="" class="certificate_img">
 				</div>
 				<div class="about_coach-certificate_list"> 
-				<img src="img/cert2.png" alt="">
+				<img src="img/cert2.png" alt="" class="certificate_img">
 				</div>
 				<div class="about_coach-certificate_list"> 
-				<img src="img/cert3.png" alt="">
+				<img src="img/cert3.png" alt="" class="certificate_img">
 				</div>
 			</div>
 	</div>
@@ -166,16 +166,16 @@
 		<h2 class="title_page">Чему вы научитесь</h2>
 		<div class="block_result">
 				<div class="block_result-item">
-					<img src="img/result_icon.png" alt="">
+					<img src="img/result_icon.png" alt="" class="result_img">
 					<p>Увеличивать конверсии</p>
 			
 				</div>
 				<div class="block_result-item">
-					<img src="img/result_icon2.png" alt="">
+					<img src="img/result_icon2.png" alt="" class="result_img">
 					<p>Увеличивать объем продаж</p>
 				</div>
 				<div class="block_result-item">
-					<img src="img/result_icon3.png" alt="">
+					<img src="img/result_icon3.png" alt="" class="result_img" >
 					<p>Увеличивать средний чек</p>
 				</div>
 		</div>
@@ -197,10 +197,16 @@
 		</div>
 	</div>
 </div>
-<div class="block_reviews">
+<div class="mobile_guarantee">
+	<h4>Гарантия</h4>
+	<p>Я могу гарантировать - вы начнете продавать легче и интересней. Месяц интенсивной практики без воды и лирики неизбжно увеличит ваши продажи минимум на <span>35%</span>, поэтому стоимость курса обычно отбивается еще до его окончанияю</p>
+	<div class="link_center"><a href="#" class="link">Купить Курс!</a></div>
+	<p>Если покажется, чтоы ваш прогресс стоит на месте, вы можете вернуть деньги в любой момент без обьяснения причин.</p>
 	
+</div>
+<div class="block_reviews">
 <div class="conteiner">
-	<h2 class="title_page">Отзывы</h2>
+	<h2 class="title_page" id="reviews">Отзывы</h2>
 		<div class="center">
 		<div class="reviews_item">
 			<img src="img/reviews1.png" alt="">
@@ -236,7 +242,7 @@
 	</div>
 </div>
 <div class="conteiner">
-	<h2 class="title_page">Выбери свой тренинг</h2>
+	<h2 class="title_page " id="courses">Выбери свой тренинг</h2>
 <div class="block_courses">
 	<div class="courses_first">
 		<h3>ЛИДЕРСТВО И УПРАВЛЕНИЕ ДРУГИМИ</h3>
@@ -280,7 +286,7 @@
 </div>
 
 <div class="conteiner">
-	<h2 class="title_page">Стоимость</h2>
+	<h2 class="title_page" id="price">Стоимость</h2>
 	<div class="block_price">
 		<div class="block_price-item">
 			<div class="title_price">
@@ -335,7 +341,7 @@
 		<div class="contacts_text">
 			<p><span>Где мы находимся:</span>   г. Нижний Новгород, ул. Бекетова, 32    +7 831 428 99 71
     +7 831 428 99 71 </p>
-    <iframe src="https://yandex.ru/map-widget/v1/-/CGTxyX7J" width="1180" height="420"  frameborder="1" allowfullscreen="true"></iframe>
+    <iframe src="https://yandex.ru/map-widget/v1/-/CGTxyX7J" width="1180" height="420"  frameborder="1" allowfullscreen="true" class="map"></iframe>
 		</div>
 
 	</div>
@@ -345,16 +351,16 @@
 		<div class="block_footer-content">
 	<nav class="nav_footer">
 		<ul class="nav_footer-list">
-			<li><a href="#">Курсы</a></li>
-			<li><a href="#">О тренере</a></li>
-			<li><a href="#">Отзывы</a></li>
-			<li><a href="#">Стоимость</a></li>
+			<li><a href="#courses">Курсы</a></li>
+			<li><a href="#about_coach">О тренере</a></li>
+			<li><a href="#reviews">Отзывы</a></li>
+			<li><a href="#price">Стоимость</a></li>
 		</ul>
 	</nav>
 	<img src="img/Logo2.png" alt="" class="logo_footer">
 	</div>
 	<div class="footer_info">
-		<div>
+		<div class="footer_addres">
 			<p>ОГРНИП 8594384600895408 ИНН 9423423556</p>
 			<p> Адрес: Нижний Новгород г, Бекетова ул, дом № 32</p>
 			<p>телефон: +7 431 428 99 71</p>

@@ -691,7 +691,9 @@ text-decoration: none;
 	height: 450px;
 }
 
-
+.mobile_courses {
+	display: none;
+}
 @media (max-width: 420px) {
 .main_page {
 	display: none;
@@ -946,7 +948,7 @@ color: #019ED3;
 	display: none;
 }
 .block_footer-content {
-display: none;
+	display: none;
 }
 .footer_addres {
 	display: none;
@@ -959,4 +961,108 @@ display: none;
 		line-height: 16px;
 		padding-top: 20px;
 }
+.block_courses {
+	display: none;
+}
+.block_reviews {
+	display: none;
+}
+.mobile_courses {
+	display: block;
+}
+.mob_block_courses {
+	display: flex;
+	justify-content: space-between;
+}
+.mob_block_courses h3 {
+	text-align: center;
+	font-weight: bold;
+	font-size: 30px;
+}
+.courses_first-text,
+.courses_second-text {
+	background: #FFFFFF;
+	border: 1px solid #002F7D;
+	border-radius: 20px 0;
+	box-shadow: 10px 10px 5px rgba(0, 47, 125, 0.5);
+	margin-left: 20px;
+	font-size: 16px;
+	line-height: 25px;
+	padding: 10px 40px;
+}
+.courses_first-text h4,
+.courses_second-text h4 {
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 28px;
+}
+.course_program-text {
+	font-size: 16px;
+	line-height: 30px;
+}
+.course_program-text1 {
+	font-size: 16px;
+	margin-bottom: 0;
+}
+
+.block_btn {
+	display: flex;
+	justify-content: center;
+}
+.btn_sign,
+.btn-buy {
+	text-align: center;
+	background: #019ED3;
+	border-radius: 5px;
+	font-weight: bold;
+	font-size: 16px;
+	color: #FFFFFF;
+	border-color: #019ED3;
+	padding: 15px 40px;
+}
+
+.btn_sign:focus
+.btn-buy:focus {
+	outline: none;
+}
+/*Стоимость курса*/
+
+.sl {
+	display: flex;
+	width: 380px;
+}
+.sl .courses_first .courses_second {
+	width: 340px;
+	height: 460px;
+	margin: 50px 0;
+	background-color: #fff;
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+	border-radius: 5px;
+	font-size: 16px;
+}
+.course_program-text {
+	font-size: 25px;
+}
+.slick-dots {
+	display: flex;
+	justify-content: center;
+	list-style: none;
+
+	
+} 
+	
+.slick-dots button {
+	margin: 20px;
+	border-radius: 50%;
+	width: 30px;
+	height: 30px;
+	font-size: 0;
+	background-color: #019ED3;;
+	border:  none;
+}
+.title_page-price {
+	margin-top: 350px;
+}
+.title_page-courses {
+	display: none;
 }

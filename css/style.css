@@ -246,7 +246,10 @@ body.is-mobmenu-open .mobile_main {
   font-size: 20px;
   line-height: 23px;
 }
+.list-nav__link:hover {
 
+  border-bottom: 3px solid tomato;
+}
 
 @media (max-width: 768px) {
   .nav_header-list a {
@@ -454,6 +457,10 @@ body.is-mobmenu-open .mobile_main {
 }
 .about_coach-certificate_list {
   margin: 80px;
+}
+.certificate_img:hover {
+  transform: scale(1.5);
+  transition: all 0.4s;
 }
 .block_result {
   display: flex;
@@ -847,7 +854,7 @@ line-height: 43px;
 .mob_block_price {
   display: none;
 }
-@media (max-width: 540px) {
+@media (max-width: 440px) {
   /* .sl_slide{
     flex-direction: column;
     width: 370px;

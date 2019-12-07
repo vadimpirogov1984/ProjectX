@@ -1,333 +1,423 @@
-	
 /* header*/
 body {
-	font-family: 'Roboto Slab', serif;
-	padding: 0;
-	margin: 0;
+  font-family: "Roboto Slab", serif;
+  padding: 0;
+  margin: 0;
 }
 ul {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
+}
+/*Блок отзывов*/
+.container {
+  background-color: #019ED3;
+}
+.main {
+margin: 0 auto;
+width: 1080px;
+height: 650px;
+}
+.title_page-sl {
+font-size: 36px;
+font-weight: bold;
+color: #002F7D;
+text-align: center;
+margin-top: 0;
+padding-top: 50px;
+text-transform: uppercase;
+}
+.slick-track {
+padding-top: 0;
+}
+.sl_slide{
+display: flex;
+width: 1080px;
+}
+.sl_slide .sl__slide {
+width: 370px;
+height: 460px;
+margin: 20px 0;
+background-color: #fff;
+box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+border-radius: 5px;
+}
+.sl_slide .sl__slide img {
+width: 150px;
+height: 150px;
+padding: 70px 100px 5px 100px;
+}
+.sl_slide .sl__slide .title {
+padding: 20px 100px 0 100px;
+font-weight: bold;
+}
+.sl_slide .sl__slide .text {
+padding: 5px 10px;
+}
+.slick-slide-control01 {
+width: 50px;
+height: 50px;
+}
+.sl_slide .slick-center  {
+transform: scale(1.15);
+}
+.sl_slide .slick-dots li button {
+border: 5px solid #fff;
+border-radius: 50%;
 }
 
+.sl_slide .slick-dots li button:before {
+content: '';
+width: 20px;
+height: 20px;
+opacity: 1;
+border-radius: 50%;
+}
+.sl_slide .slick-dots li .slick-active:hover,
+.sl_slide .slick-dots li .slick-active button {
+border-color: #blue;
+}
+.sl_slide .slick-dots li .slick-active:hover:before, 
+.sl_slide .slick-dots li .slick-active button:before {
+background-color: #fff;
+opacity: 1;
+}
+.slick-dots li {
+    margin: 0 25px;
+}
+.slick-dots {
+    margin-bottom: -10px;
+}
+.slick-track {
+padding-top: 0;
+}
+p {
+font-size: 12px;
+font-weight: 400;
+}
+.multiple-review .slick-initialized {
+  width: 1080px;
+}
+.slick-slide-control01 {
+	width: 50px;
+	height: 50px;
+}
 /* Адаптив для планшета */
 
 body.is-mobmenu-open {
-    overflow: hidden;
+  overflow: hidden;
 }
 body.is-mobmenu-open .mobile_main {
-    opacity: 1;
-    z-index: 2;
-   top: 0;
+  opacity: 1;
+  z-index: 2;
+  top: 0;
 }
 
 @media (max-width: 1024px) {
-.logo {
-	margin-left: 30px;
-}
-.block_result,
-.block_chart,
-.about_coach,
-.block_opportunity {
-	margin-right: 25px;
-	margin-left: 25px;
-}
+  
+  .logo {
+    margin-left: 30px;
+  }
+  .block_result,
+  .block_chart,
+  .about_coach,
+  .block_opportunity {
+    margin-right: 25px;
+    margin-left: 25px;
+  }
 
-.block_courses {
-	margin-left: 15px;
-}
-.nav_footer {
-	margin-left: 15px;
-}
-.main_page-title h1 {
-	font-size: 60px;
-}
-.main_page-title p {
-	font-size: 35px;
-}
-.my_progress {
-	margin-right: 30px;
-}
-.social_icon-footer {
-	padding-right: 30px;
-}
+  .block_courses {
+    margin-left: 15px;
+  }
+  .nav_footer {
+    margin-left: 15px;
+  }
+  .main_page-title h1 {
+    font-size: 60px;
+  }
+  .main_page-title p {
+    font-size: 35px;
+  }
+  .my_progress {
+    margin-right: 30px;
+  }
+  .social_icon-footer {
+    padding-right: 30px;
+  }
 }
 
 /* ------------------- */
 
-
 .conteiner {
-	max-width: 1140px;
-	margin: 0 auto;
-	box-sizing: content-box;
+  max-width: 1140px;
+  margin: 0 auto;
+  box-sizing: content-box;
 }
 .header {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	margin-top: 20px;
-	margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .mobile_main {
-	display: none;
+  display: none;
 }
 .logo {
-	position: relative;
-	width: 274px;
-	height: 76px;
-	border: 1px solid #000000;
-	box-sizing: border-box; 
-	text-align: center;
+  position: relative;
+  width: 274px;
+  height: 76px;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  text-align: center;
 }
 .logo_name {
-	width: 222.61px;
-	height: 35.39px;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 40px;
-	line-height: 43px;
-	text-align: center;
-	letter-spacing: 0.5em;
-	color: #000000;
-	padding-top: 10px;
-	padding-left: 20px;
-
+  width: 222.61px;
+  height: 35.39px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 43px;
+  text-align: center;
+  letter-spacing: 0.5em;
+  color: #000000;
+  padding-top: 10px;
+  padding-left: 20px;
 }
 .logo_name-sch {
-	width: 207px;
-	height: 9px;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 14px;
-	line-height: 30px;
-	letter-spacing: 0.3em;
-	color: #000000;
-	padding-left: 26px;
-	padding-right: 26px;
+  width: 207px;
+  height: 9px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+  letter-spacing: 0.3em;
+  color: #000000;
+  padding-left: 26px;
+  padding-right: 26px;
 }
-.logo_item{
-	position: absolute;
-	left: 10px;
-	top: 5px;
-	background-color: #000;
-	border-radius: 50%;
-	width: 7.16px;
-	height: 5.88px;
+.logo_item {
+  position: absolute;
+  left: 10px;
+  top: 5px;
+  background-color: #000;
+  border-radius: 50%;
+  width: 7.16px;
+  height: 5.88px;
 }
-.logo_item1{
-	position: absolute;
-	left: 250px;
-	top: 5px;
-	background-color: #000;
-	border-radius: 50%;
-	width: 7.16px;
-	height: 5.88px;
+.logo_item1 {
+  position: absolute;
+  left: 250px;
+  top: 5px;
+  background-color: #000;
+  border-radius: 50%;
+  width: 7.16px;
+  height: 5.88px;
 }
-.logo_item2{
-	position: absolute;
-	left: 10px;
-	top: 64px;
-	background-color: #000;
-	border-radius: 50%;
-	width: 7.16px;
-	height: 5.88px;
+.logo_item2 {
+  position: absolute;
+  left: 10px;
+  top: 64px;
+  background-color: #000;
+  border-radius: 50%;
+  width: 7.16px;
+  height: 5.88px;
 }
-.logo_item3{
-	position: absolute;
-	left: 250px;
-	top: 64px;
-	background-color: #000;
-	border-radius: 50%;
-	width: 7.16px;
-	height: 5.88px;
+.logo_item3 {
+  position: absolute;
+  left: 250px;
+  top: 64px;
+  background-color: #000;
+  border-radius: 50%;
+  width: 7.16px;
+  height: 5.88px;
 }
 
 .nav_header-list,
 .nav_footer-list {
-	display: flex;
-	align-items: center;
-	list-style: none;
+  display: flex;
+  align-items: center;
+  list-style: none;
 }
 .nav_header-list a {
-	text-decoration: none;
-	padding-left: 70px;
-	color: #000;
-	font-weight: bold;
-	font-size: 20px;
-	line-height: 23px;
+  text-decoration: none;
+  padding-left: 70px;
+  color: #000;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
 }
+
 @media (max-width: 768px) {
-.nav_header-list a {
-	padding-left: 20px;
-	font-size: 16px;
-}
-.main_page-title h1 {
-	font-size: 30px;
-}
-.main_page-title p {
-	font-size: 20px;
-}
-.main_page-foto p {
-	font-size: 16px;
-}
-.my_progress p {
-font-size: 14px;
-}
-.chart_title {
-	font-size: 30px;
-}
+  .nav_header-list a {
+    padding-left: 20px;
+    font-size: 16px;
+  }
+  .main_page-title h1 {
+    font-size: 30px;
+  }
+  .main_page-title p {
+    font-size: 20px;
+  }
+  .main_page-foto p {
+    font-size: 16px;
+  }
+  .my_progress p {
+    font-size: 14px;
+  }
+  .chart_title {
+    font-size: 30px;
+  }
 }
 
 /* Главная страница */
 .mobile_page {
-	display: none;
+  display: none;
 }
 .main_page {
-	background-color: #002F7D;
-	min-height: 800px;
+  background-color: #002f7d;
+  min-height: 800px;
 }
 .cont {
-	display: flex;
-	justify-content: space-between;
-
+  display: flex;
+  justify-content: space-between;
 }
 .main_page-title {
-	font-weight: bold;
-	font-size: 40px;
-	line-height: 56px;
-	color: #FFFFFF;
-	margin-top: 100px;
-	margin-left: 50px;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 56px;
+  color: #ffffff;
+  margin-top: 100px;
+  margin-left: 50px;
 }
 .link {
-	font-weight: bold;
-	font-size: 16px;
-	line-height: 19px;
-	color: #FFFFFF;
-	border: 1px solid #019ED3;
-	border-radius: 5px;
-	background-color: #019ED3;
-	text-decoration: none;
-	padding: 20px 30px;
-	text-align: center;
-	
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+  border: 1px solid #019ed3;
+  border-radius: 5px;
+  background-color: #019ed3;
+  text-decoration: none;
+  padding: 20px 30px;
+  text-align: center;
+}
+.link:hover {
+  color: #019ED3;
+    background-color: #FFFFFF;
+      border: 1px solid #019ED3;
+
 }
 .main_page-foto {
-	margin-top: 50px;
-	text-align: center;
-	font-size: 24px;
-	color: #FFFFFF;
+  margin-top: 50px;
+  text-align: center;
+  font-size: 24px;
+  color: #ffffff;
 }
 .social_icon-list {
-	display: flex;
-	list-style: none;
-	padding-top: 40px;
-	padding-left: 100px;
-
+  display: flex;
+  list-style: none;
+  padding-top: 40px;
+  padding-left: 100px;
 }
 .social_icon-list a {
-	padding-right: 40px;
+  padding-right: 40px;
 }
 .my_progress {
-	padding-top: 40px;
+  padding-top: 40px;
 }
 .my_progress-text {
-	text-decoration: none;
-	border-bottom: 1px solid #fff;
-	color: #fff;
-	font-size: 18px;
-
+  text-decoration: none;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+  font-size: 18px;
 }
 
 /* Что получишь на курсе */
 
 .block_chart {
-	display: flex;
-	justify-content: space-between;
-	margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
 }
 .chart_title {
-	text-align: center;
-	margin-top: 100px;
-	font-size: 60px;
-	font-weight: bold;
+  text-align: center;
+  margin-top: 100px;
+  font-size: 60px;
+  font-weight: bold;
 }
 .chart_title span {
-	color: #002F7D;
+  color: #002f7d;
 }
 .block_chart div {
-	height: 236px;
-	width: 236px;
-	text-align: center;
-	font-size: 26px;
+  height: 236px;
+  width: 236px;
+  text-align: center;
+  font-size: 26px;
 }
 .block_chart span {
-	font-weight: bold;
+  font-weight: bold;
 }
 .block_chart-title {
-	font-size: 36px;
-	font-weight: bold;
-	line-height: 2px;
-	color: #002F7D;
-
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 2px;
+  color: #002f7d;
 }
 .block_chart-income {
-	background-image: url(../img/chart2.png);
-	background-repeat: no-repeat;
-	padding-top: 20px;
+  background-image: url(../img/chart2.png);
+  background-repeat: no-repeat;
+  padding-top: 20px;
 }
 .block_chart-bis {
-	background-image: url(../img/chart1.png);
-	background-repeat: no-repeat;
-	padding-top: 20px;
+  background-image: url(../img/chart1.png);
+  background-repeat: no-repeat;
+  padding-top: 20px;
 }
 .block_chart-dream {
-	background-image: url(../img/chart3.png);
-	background-repeat: no-repeat;
-	padding-top: 20px;
+  background-image: url(../img/chart3.png);
+  background-repeat: no-repeat;
+  padding-top: 20px;
 }
-
-
 
 .opportunity_title {
-	font-size: 36px;
-	font-weight: bold;
-	color: #002F7D;
-	text-align: center;
-	margin-top: 60px;
+  font-size: 36px;
+  font-weight: bold;
+  color: #002f7d;
+  text-align: center;
+  margin-top: 60px;
 }
 .block_opportunity {
-	display: flex;
-	justify-content: space-between;
-	font-weight: bold;
-	font-size: 24px;
-	margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: 24px;
+  margin-top: 80px;
 }
 .block_opportunity-item li {
-	list-style: none;
-	line-height: 80px;
+  list-style: none;
+  line-height: 80px;
 }
 .check_icon {
-	padding-right: 10px;
+  padding-right: 10px;
 }
 .link_want {
-	font-weight: bold;
-	font-size: 24px;
-	line-height: 19px;
-	color: #FFFFFF;
-	border: 1px solid #019ED3;
-	border-radius: 5px;
-	background-color: #019ED3;
-	text-decoration: none;
-	padding: 25px 85px;
-	text-align: center;
-	margin-top: 60px;
-	max-width: 226px;
-	text-transform: uppercase;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 19px;
+  color: #ffffff;
+  border: 1px solid #019ed3;
+  border-radius: 5px;
+  background-color: #019ed3;
+  text-decoration: none;
+  padding: 25px 85px;
+  text-align: center;
+  margin-top: 60px;
+  max-width: 226px;
+  text-transform: uppercase;
 }
 .link_center {
-	display: flex;
-	justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 /* О тренере */
@@ -335,741 +425,861 @@ font-size: 14px;
 .title_page-courses,
 .title_page-price,
 .title_page {
-	font-size: 36px;
-	font-weight: bold;
-	color: #002F7D;
-	text-align: center;
-	margin-top: 60px;
-	padding-top: 40px;
-	text-transform: uppercase;
+  font-size: 36px;
+  font-weight: bold;
+  color: #002f7d;
+  text-align: center;
+  margin-top: 60px;
+  padding-top: 40px;
+  text-transform: uppercase;
 }
 .about_coach {
-	display: flex;
-	justify-content: space-between;
-	margin-top: 80px;
-
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
 }
 .about_coach-text {
-	font-size: 24px;
-	line-height: 34px;
-	max-width: 458px;
+  font-size: 24px;
+  line-height: 34px;
+  max-width: 458px;
 }
 .about_coach-img {
-	padding-top: 25px;
+  padding-top: 25px;
 }
 .about_coach-certificate {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .about_coach-certificate_list {
-	margin: 80px;
+  margin: 80px;
 }
- .block_result {
- 	display: flex;
- 	justify-content: space-between;
- 	margin-top: 80px;
- }
- .block_result-item {
- 	text-align: center;
- 	font-weight: bold;
-	font-size: 24px;
-	max-width: 320px;
- }
-
-
+.block_result {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+}
+.block_result-item {
+  text-align: center;
+  font-weight: bold;
+  font-size: 24px;
+  max-width: 320px;
+}
 
 /* Гарантия */
 .mobile_guarantee {
-	display: none;
+  display: none;
 }
 .block_guarantee {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin-top: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 120px;
 }
- .block_guarantee-content {
-	background-image: url(../img/framegur.png);
-	background-repeat: no-repeat;
-	width: 772px;
-	min-height: 547.56px;
-	text-align: center;
-	font-size: 24px;
-	line-height: 34px;
-	padding-top: 50px;
- }
+.block_guarantee-content {
+  background-image: url(../img/framegur.png);
+  background-repeat: no-repeat;
+  width: 772px;
+  min-height: 547.56px;
+  text-align: center;
+  font-size: 24px;
+  line-height: 34px;
+  padding-top: 50px;
+}
 .block_guarantee-content span {
-	font-weight: bold;
-	font-size: 36px;
-	line-height: 42px;
-	color: #002F7D;
-	text-transform: uppercase;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  color: #002f7d;
+  text-transform: uppercase;
 }
 .logo_gua {
-	padding-bottom: 60px;
+  padding-bottom: 60px;
 }
 .block_guarantee-img {
-	display: flex;
-	justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 
 .center {
-	width: 557px;
-	margin: 0 auto;
+  width: 557px;
+  margin: 0 auto;
 }
 .block_reviews {
-	background: #019ED3;
-	
+  background: #019ed3;
 }
 .reviews_item {
-	font-size: 16px;
-	line-height: 19px;
-	text-align: center;
-	background: #FFFFFF;
-	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
-	border-radius: 5px;
-	margin-right: 15px;
-width: 557px;
-height: 450px;
-
-
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  background: #ffffff;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  margin-right: 15px;
+  width: 557px;
+  height: 450px;
 }
 .reviews_item span {
-	font-weight: bold;
-	font-size: 22px;
+  font-weight: bold;
+  font-size: 22px;
 }
-@media (max-width: 768px) {
-.block_chart div {
-	height: 190px;
-	width: 190px;
+/*Призыв к действию*/
+.wrap-call-to {
+	background-color: #002F7D;
+	min-height: 500px;	
+}
+.call-to-action {
+	width: 1140px;
+	margin: 	0 auto;
+}
+.call-to-action .title {
+	font-size: 36px;
+	line-height: 40px;
+	color: #fff;
+	font-weight: normal;
 	text-align: center;
-	font-size: 16px;
+	padding-top: 150px;
+	/*margin-left: 500px;*/
 }
-.block_chart-income,
-.block_chart-bis,
-.block_chart-dream {
-	background-size: 190px 190px;
+.call-to-action .link {
+	margin-left: 480px;
+	margin-top: 115px;
 }
-.chart_title {
-	font-size: 30px;
-
+.contacts {
+	background-image: url(../img/map.png);
+	background-repeat: no-repeat;
+	height: 420px;
+	position: relative;
 }
-.block_chart-title {
-	font-size: 28px;
+.contacts span {
 	font-weight: bold;
-	line-height: 2px;
-	color: #002F7D;
+font-size: 40px;
+line-height: 43px;
+}
+.contacts-desk {
+	position: absolute;
+	margin-top: 70px;
+	width: 300px;
+	height: 250px;
+
+	background-color: #fff;
+	box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 
 }
-.block_opportunity {
-	font-size: 16px;
-}
-.block_opportunity-item li {
-	line-height: 50px;
-}
-.check_icon {
-	width: 25px;
-	height: 25px;
-
-}
-.about_coach-text {
-	font-size: 18px;
-	line-height: 34px;
-	max-width: 700px;
-}
-.about_coach {
+.contacts-content{
 	display: flex;
 	flex-direction: column;
-
 }
-.about_coach-img {
-	margin-left: 80px;
+.contacts-header {
+	margin: 20px auto;
 }
-.name_coach-text {
-	text-align: center;
-	font-size: 22px;
+.contacts-header span{
+  padding: 0 15px;
+}
+.contacts-header p{
+	padding: 0 10px;
+}
+.contacts-content .adress {
+	width: 200px;
+	margin-left: 40px;
+}
+.contacts-content p{
+	margin: 0;
+	line-height: 22px;
+}
+.contacts-content .adress span{
+	font-size: 14px;
 	font-weight: bold;
 }
-.about_coach-certificate_list {
-	margin-right: 30px;
-	margin-left: 30px;
+@media (max-width: 768px) {
+  .block_chart div {
+    height: 190px;
+    width: 190px;
+    text-align: center;
+    font-size: 16px;
+  }
+  .block_chart-income,
+  .block_chart-bis,
+  .block_chart-dream {
+    background-size: 190px 190px;
+  }
+  .chart_title {
+    font-size: 30px;
+  }
+  .block_chart-title {
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 2px;
+    color: #002f7d;
+  }
+  .block_opportunity {
+    font-size: 16px;
+  }
+  .block_opportunity-item li {
+    line-height: 50px;
+  }
+  .check_icon {
+    width: 25px;
+    height: 25px;
+  }
+  .about_coach-text {
+    font-size: 18px;
+    line-height: 34px;
+    max-width: 700px;
+  }
+  .about_coach {
+    display: flex;
+    flex-direction: column;
+  }
+  .about_coach-img {
+    margin-left: 80px;
+  }
+  .name_coach-text {
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+  }
+  .about_coach-certificate_list {
+    margin-right: 30px;
+    margin-left: 30px;
+  }
 }
-}
-
-
 
 /*Стили слайдера*/
 
 .slick-dots {
-    list-style-type: none;
-    margin: 20px 0 0;
-    padding: 0;
-    text-align: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
 
 .slick-dots li {
-    display: inline-block;
-    margin: 0 9px;
+  display: inline-block;
+  margin: 0;
 }
 
 .slick-dots li button {
-    border-radius: 50%;
-    border: none;
-    background-color: #fff;
-    text-indent: -9999px;
-    width: 20px;
-    height: 20px;
-    padding: 0;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  border: none;
+  background-color: #019ed3;
+  text-indent: -9999px;
+  width: 20px;
+  height: 20px;
+  margin: 10px;
 }
 
 .slick-dots li button:focus {
-    outline: none;
+  outline: none;
 }
 
 /*Блок с курсами*/
 
 .block_courses {
-	display: flex;
-	justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 .block_courses h3 {
-	text-align: center;
-	font-weight: bold;
-	font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
 }
 .courses_first-text,
 .courses_second-text {
-	background: #FFFFFF;
-	border: 1px solid #002F7D;
-	border-radius: 20px 0;
-	box-shadow: 10px 10px 5px rgba(0, 47, 125, 0.5);
-	margin-left: 20px;
-	font-size: 16px;
-	line-height: 25px;
-	padding: 10px 40px;
+  background: #ffffff;
+  border: 1px solid #002f7d;
+  border-radius: 20px 0;
+  box-shadow: 10px 10px 5px rgba(0, 47, 125, 0.5);
+  margin-left: 20px;
+  font-size: 16px;
+  line-height: 25px;
+  padding: 10px 40px;
+  /* height: 590px; */
 }
 .courses_first-text h4,
 .courses_second-text h4 {
-	font-weight: bold;
-	font-size: 24px;
-	line-height: 28px;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
 }
 .course_program-text {
-	font-size: 16px;
-	line-height: 30px;
+  font-size: 16px;
+  line-height: 30px;
 }
 .course_program-text1 {
-	font-size: 16px;
-	margin-bottom: 0;
+  font-size: 16px;
+  margin-bottom: 0;
 }
 
 .block_btn {
-	display: flex;
-	justify-content: flex-end;
+  display: flex;
+  justify-content: flex-end;
 }
 .btn_sign,
 .btn-buy {
-	text-align: center;
-	background: #019ED3;
-	border-radius: 5px;
-	font-weight: bold;
-	font-size: 16px;
-	color: #FFFFFF;
-	border-color: #019ED3;
-	padding: 15px 40px;
+  text-align: center;
+  background: #019ed3;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 16px;
+  color: #ffffff;
+  border-color: #019ed3;
+  padding: 15px 40px;
 }
 
 .btn_sign:focus,
 .btn-buy:focus {
-	outline: none;
+  outline: none;
 }
 /*Стоимость курса*/
 
 .block_price {
-	display: flex;
-	justify-content: space-between;
-	align-items: flex-start;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 30px;
 }
 .block_price-item {
-	border: 1px solid #000;
-	border-radius: 25px 0  25px 0;
-	padding-bottom: 30px;
-}
+  border: 1px solid #000;
+  border-radius: 25px 0 0 0;
+  padding-bottom: 30px;
+  box-shadow: 10px 10px 5px rgba(0, 47, 125, 0.5);
+ }
 .block_price-item:not(:last-child) {
-	margin-right: 20px;
+  margin-right: 10px;
 }
 .title_price {
-	border: 1px solid #000;
-	border-right: none;
-	border-radius: 25px 0 0 0;
-	background-color: #019ED3;
-	color: #fff;
-	text-align: center;
-	font-weight: bold;
-	padding-bottom: 30px;
+  border-bottom: 1px solid #000;
+  border-right: none;
+  border-radius: 25px 0 0 0;
+  background-color: #019ed3;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  padding: 15px 0;
 }
 .title_price-name {
-	
-	font-size: 24px;
+  font-size: 24px;
 }
 .sing_dollar {
-	
-	font-size: 36px;
+  font-size: 36px;
 }
 .price_in_dollars {
-	
-	font-size: 48px;
+  font-size: 48px;
 }
 .price_in_cents {
-	
-	font-size: 24px;
-	padding-left: 5px;
+  font-size: 24px;
+  padding-left: 5px;
 }
 .price_item-text {
-	font-size: 16px;
-	padding: 25px 25px 40px 30px;
+  font-size: 16px;
+  padding: 25px 25px 40px 30px;
 }
 .block_btn-buy {
-	display: flex;
-	justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 
 /*Конакты*/
 
 .block_contacts {
-	margin-top: 60px;
-	background-color: #C4C4C4;
+  margin-top: 60px;
+  background-color: #c4c4c4;
 }
 .contacts_text {
-	font-size: 22px;
-	padding: 15px;
+  font-size: 22px;
+  padding: 15px;
 }
 .contacts_text span {
-	font-weight: bold;
-	color: #002F7D;
+  font-weight: bold;
+  color: #002f7d;
 }
 
 /*Подвал*/
 
 .footer {
-	background-color: #002F7D;
+  background-color: #002f7d;
 }
 .block_footer-content {
-display: flex;
-justify-content: space-between;
-align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.nav_footer-list a  {
-color: #fff;
-font-size: 14px;
-font-weight: normal;
-padding-right: 50px;
-text-decoration: none;
-
+.nav_footer-list a {
+  color: #fff;
+  font-size: 14px;
+  font-weight: normal;
+  padding-right: 50px;
+  text-decoration: none;
 }
 .logo_footer {
-	padding: 20px 10px;
+  padding: 20px 10px;
 }
 .footer_info {
-	display: flex;
-	justify-content: space-between;
-	align-items: flex-end;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 .social_icon-footer {
-	display: flex;
-	list-style: none;
-	padding-bottom: 20px;
+  display: flex;
+  list-style: none;
+  padding-bottom: 20px;
 }
 .social_icon-footer a {
-	padding-left: 40px;
-
+  padding-left: 40px;
 }
 
 .slick-slider {
-	width: 800px;
-
+  width: 800px;
 }
 
 .slick-initialized {
-	width: 400px;
-	height: 450px;
+  width: 1080px;
+  height: 450px;
 }
 
 .mobile_courses {
-	display: none;
+  display: none;
 }
 .mob_block_price {
-	display: none;
+  display: none;
 }
 @media (max-width: 540px) {
-.main_page {
-	display: none;
-}
-.header {
-	display: none;
-}
-.test_fon {
-	background-image: url(../img/mobcoach.png);
-}
-.mobile_page {
-	padding-left: 10px;
-	padding-top: 10px;
-	display: block;
-	background-color: rgba(0, 47, 125, 0.7);
-	min-height: 600px;
-	z-index: 1;
-}
-.mobile_page p {
-	font-weight: bold;
-	font-size: 22px;
-	line-height: 36px;
-	color: #FFFFFF;
-	text-transform: uppercase;
-}
-.mobile_page h1 {
-	padding-top: 20px;
-	font-weight: bold;
-	font-size: 24px;
-	line-height: 28px;
-	color: #FFFFFF;
-}
-.mobile_page-title {
-margin-top: 100px;
-}
-.coahc_name-page p {
-	font-size: 12px;
-	font-weight: normal;
-	margin-left: 200px;
-	text-transform: none;
-	line-height: 18px;
-}
-.coahc_name-page span {
-	font-weight: 500;
-	font-size: 16px;
-	color: #FFFFFF;
-	padding-top: 30px;
-	margin-left: 200px;
+  /* .sl_slide{
+    flex-direction: column;
+    width: 370px;
+    } */
+    .sl_slide .slick-center  {
+      transform: none;
+      }
+  .call-to-action {
+    width: 360px;
+    margin: 	0 auto;
+  }
+  .call-to-action .title{
+    font-size: 24px;
+  }
+  .call-to-action .link{
+    margin-left: 130px;
+  }
+  .contacts-desk{
+    margin: 70px 30px;
+  }
+  .courses_first-text,
+  .courses_second-text {
+    /* background: #ffffff;
+	  border: 1px solid #002f7d;
+	  border-radius: 20px 0;
+	  box-shadow: 10px 10px 5px rgba(0, 47, 125, 0.5);
+	  margin-left: 20px;
+	  font-size: 16px;
+	  line-height: 25px; */
+    padding: 0px 10px;
+    margin: 0 10px;
+    width: 335px;
+  }
+  .block_reviews {
+    display: none;
+  }
+  .sl_price {
+    width: 280px;
+    /* border-radius: 25px 0 0 0;
+    border: 1px solid #000; */
+  }
+  /* .slick-dots li button:before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: #000;
+    opacity: 1;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    margin: -5px 0 0 -5px;
+  } */
+  /* .block_price-item:not(:last-child) {
+    margin-right: 5px;
+  } */
+  .courses_first-text h4,
+  .courses_second-text h4 {
+    margin: 0;
+  }
+  .courses_first-text p,
+  .courses_second-text p {
+    margin: 0;
+  }
+  .slick-dots li.slick-active button {
+  }
+  .slick-dots li .slick-active button:before {
+    background-color: #fff;
+    opacity: 1;
+  }
+
+  .main_page {
+    display: none;
+  }
+  .header {
+    display: none;
+  }
+  .test_fon {
+    background-image: url(../img/mobcoach.png);
+  }
+  .mobile_page {
+    padding-left: 10px;
+    padding-top: 10px;
+    display: block;
+    background-color: rgba(0, 47, 125, 0.7);
+    min-height: 600px;
+    z-index: 1;
+  }
+  .mobile_page p {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 36px;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+  .mobile_page h1 {
+    padding-top: 20px;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    color: #ffffff;
+  }
+  .mobile_page-title {
+    margin-top: 100px;
+  }
+  .coahc_name-page p {
+    font-size: 12px;
+    font-weight: normal;
+    margin-left: 200px;
+    text-transform: none;
+    line-height: 18px;
+  }
+  .coahc_name-page span {
+    font-weight: 500;
+    font-size: 16px;
+    color: #ffffff;
+    padding-top: 30px;
+    margin-left: 200px;
+  }
+  .coahc_name-page {
+    margin-top: 60px;
+  }
+  .link {
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 15px;
+    color: #ffffff;
+    border: 1px solid #019ed3;
+    border-radius: 5px;
+    background-color: #019ed3;
+    text-decoration: none;
+    padding: 15px 20px;
+    text-align: center;
+    margin-top: 70px;
+
+    text-transform: uppercase;
+  }
+  .link:hover {
+		color: #019ED3;
+			background-color: #FFFFFF;
+				border: 1px solid #019ED3;
 
 }
-.coahc_name-page {
-	margin-top: 60px;
-}
-.link {
-	font-weight: bold;
-	font-size: 11px;
-	line-height: 15px;
-	color: #FFFFFF;
-	border: 1px solid #019ED3;
-	border-radius: 5px;
-	background-color: #019ED3;
-	text-decoration: none;
-	padding: 15px 20px;
-	text-align: center;
-	margin-top: 70px;
-	
-	text-transform: uppercase;
-}
-.gam {
-	position: relative;
-	width: 30px;
-	height: 5px;
-	background-color: #000;
+  .gam {
+    position: relative;
+    width: 30px;
+    height: 5px;
+    background-color: #fff;
+  }
+  .gam::after {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    content: " ";
+    width: 30px;
+    height: 5px;
+    background-color: #fff;
+    display: block;
+    transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+  }
+  .gam::before {
+    position: absolute;
+    left: 0;
+    top: -10px;
+    content: " ";
+    width: 30px;
+    height: 5px;
+    background-color: #fff;
+    display: block;
+    transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+  }
+  .gam.gam-active {
+    background-color: transparent;
+  }
+  .gam.gam-active::before {
+    transform: rotate(45deg);
+    top: 0;
+    transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+  }
+  .gam.gam-active::after {
+    transform: rotate(-45deg);
+    top: 0;
+    transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+  }
+  .gam-wrapper {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+  }
+  .mobile_main {
+    opacity: 0;
+    transition: all 0.5s ease;
+    background: #002f7d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #000000;
+  }
+  .mobile_nav-list {
+    margin-top: 50px;
+  }
+  .mobile_nav-list li {
+    list-style: none;
+    padding-top: 50px;
+    text-decoration: none;
+  }
+  .mobile_nav-list a {
+    text-decoration: none;
+    color: #000000;
+  }
 
-}
-.gam::after {
-	position: absolute;
-	left: 0;
-	top: 10px;
-	content: " ";
-	width: 30px;
-	height: 5px;
-	background-color: #000;
-	display: block;
-	transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
-}
-.gam::before {
-	position: absolute;
-	left: 0;
-	top: -10px;
-	content: " ";
-	width: 30px;
-	height: 5px;
-	background-color: #000;
-	display: block;
-	transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
-}
-.gam.gam-active {
-	background-color: transparent;
-}
-.gam.gam-active::before {
-	transform: rotate(45deg);
-	top: 0;
-	transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
-}
-.gam.gam-active::after {
-	transform: rotate(-45deg);
-	top: 0;
-	transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
-}
-.gam-wrapper {
-	width: 30px;
-	height: 30px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  .msocial_icon-list {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+  }
+  .msocial_icon-list li {
+    padding: 20px;
+    list-style: none;
+  }
+  .mobile_page {
+    position: relative;
+    z-index: 2;
+  }
+  .mobile_main {
+    width: 100%;
+    min-height: 580px;
+    position: absolute;
+    z-index: 1;
+  }
+  .bis_tre {
+    padding-top: 40px;
+  }
 
-}
-.mobile_main {
-	opacity: 0;
-	transition: all 0.5s ease;
-	background: #002F7D;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	text-align: center;
-	font-size: 24px;
-	font-weight: bold;
-	color: #000000;
+  .btn_close {
+    display: block;
+    background-color: #002f7d;
+    border: none;
+    margin-top: 20px;
+    margin-left: 330px;
+  }
 
-} 
-.mobile_nav-list {
-	margin-top: 50px;
-}
-.mobile_nav-list li {
-	list-style: none;
-	padding-top: 50px;
-	text-decoration: none;
-}
-.mobile_nav-list a {
-	text-decoration: none;
-	color: #000000;
+  .block_chart-dream,
+  .block_chart-bis,
+  .block_chart-income {
+    margin-top: 40px;
+  }
+  .chart_title {
+    margin-top: 30px;
+  }
+  .title_page {
+    margin-top: 20px;
+    font-size: 24px;
+  }
+  .block_opportunity-item:last-child {
+    display: none;
+  }
+  .block_opportunity {
+    margin-top: 30px;
+  }
+  .link_want {
+    font-size: 16px;
+    padding: 20px 40px;
+  }
+  .about_img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+  }
+  .block_chart,
+  .block_result,
+  .about_coach {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+  }
+  .about_coach-img {
+    margin: 0;
+  }
+  .name_coach-text span {
+    font-size: 28px;
+  }
+  .about_coach-certificate_list:nth-child(2) {
+    display: none;
+  }
+  .certificate_img {
+    width: 120px;
+    height: 180px;
+  }
 
-}
-.msocial_icon-list {
-	display: flex;
-	justify-content: center;
-	margin-top: 70px;
-	
-}
-.msocial_icon-list li {
-	padding: 20px;
-	list-style: none;
-}
-.mobile_page {
-	position: relative;
-	z-index: 2;
-}
-.mobile_main {
-	width: 100%;
-	min-height: 580px;
-	position: absolute;
-	z-index: 1;
-}
-.bis_tre {
-	padding-top: 40px;
-}
+  .result_img {
+    width: 140px;
+    height: 120px;
+  }
+  .block_result-item {
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  .block_guarantee {
+    display: none;
+  }
+  .mobile_guarantee h4 {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .mobile_guarantee {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .mobile_guarantee span {
+    font-size: 18px;
+    font-weight: bold;
+    color: #019ed3;
+  }
+  .map {
+    display: none;
+  }
+  .block_footer-content {
+    display: none;
+  }
+  .footer_addres {
+    display: none;
+  }
+  .footer_info {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    font-size: 14px;
+    line-height: 16px;
+    padding-top: 20px;
+  }
+  .block_courses {
+    display: none;
+  }
 
-.btn_close {
-	display: block;
-	background-color: #002F7D;
-	border: none;
-	margin-left: 250px;
+  .mobile_courses {
+    display: block;
+  }
+  .mob_block_courses {
+    display: flex;
+    justify-content: space-between;
+    height: 515px;
+  }
+  .mob_block_courses h3 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px;
+  }
 
+  .block_btn {
+    display: flex;
+    justify-content: center;
+  }
+  .btn_sign,
+  .btn-buy {
+    text-align: center;
+    background: #019ed3;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #ffffff;
+    border-color: #019ed3;
+    padding: 15px 40px;
+    margin: 10px 0;
+  }
 
-}
+  .btn_sign:focus .btn-buy:focus {
+    outline: none;
+  }
+  /*Стоимость курса*/
 
-.block_chart-dream,
-.block_chart-bis,
-.block_chart-income {
-	margin-top: 40px;
-}
-.chart_title {
-	margin-top: 30px;
-}
-.title_page {
-	margin-top: 20px;
-	font-size: 24px;
-}
-.block_opportunity-item:last-child {
-	display: none;
-}
-.block_opportunity {
-	margin-top: 30px;
-}
-.link_want {
-	font-size: 16px;
-	padding: 20px 40px;
-}
-.about_img {
-	width: 180px;
-	height: 180px;
-	border-radius: 50%;
-}
-.block_chart,
-.block_result,
-.about_coach {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin-top: 30px;
-}
-.about_coach-img {
-	margin: 0;
-}
-.name_coach-text span {
-	font-size: 28px;
-}
-.about_coach-certificate_list:nth-child(2) {
-	display: none;
-}
-.certificate_img {
-	width: 120px;
-	height: 180px;
-}
+  .sl {
+    display: flex;
+    width: 380px;
+    margin-bottom: 300px;
+  }
+  .sl .courses_first .courses_second {
+    width: 320px;
+    height: 460px;
+    margin: 50px 0;
+    background-color: #fff;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  .course_program-text {
+    font-size: 20px;
+  }
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+  }
 
-.result_img {
-	width: 140px;
-	height: 120px;
-}
-.block_result-item {
-	font-size: 18px;
-	margin-top: 20px;
-}
-.block_guarantee {
-	display: none;
+  /* .slick-dots button {
+    margin: 20px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 0;
+    background-color: #019ed3;
+    border: none;
+  } */
 
-}
-.mobile_guarantee h4 {
-	font-size: 22px;
-	font-weight: bold;
-	text-align: center;
-}
-.mobile_guarantee {
-	font-size: 16px;
-	line-height: 22px;
-}
-.mobile_guarantee span {
-	font-size: 18px;
-	font-weight: bold;
-	color: #019ED3; 
-}
-.map {
-	display: none;
-}
-.block_footer-content {
-	display: none;
-}
-.footer_addres {
-	display: none;
-}
-.footer_info {
-		display: flex;
-		flex-direction: column-reverse;
-		align-items: center;
-		font-size: 14px;
-		line-height: 16px;
-		padding-top: 20px;
-}
-.block_courses {
-	display: none;
-}
-.block_reviews {
-	display: none;
-}
-.mobile_courses {
-	display: block;
-}
-.mob_block_courses {
-	display: flex;
-	justify-content: space-between;
-}
-.mob_block_courses h3 {
-	text-align: center;
-	font-weight: bold;
-	font-size: 22px;
-}
+  .title_page-courses {
+    display: none;
+  }
 
-.block_btn {
-	display: flex;
-	justify-content: center;
-}
-.btn_sign,
-.btn-buy {
-	text-align: center;
-	background: #019ED3;
-	border-radius: 5px;
-	font-weight: bold;
-	font-size: 16px;
-	color: #FFFFFF;
-	border-color: #019ED3;
-	padding: 15px 40px;
-	margin-bottom: 20px;
-}
-
-.btn_sign:focus
-.btn-buy:focus {
-	outline: none;
-}
-/*Стоимость курса*/
-
-.sl {
-	display: flex;
-	width: 380px;
-	margin-bottom: 300px;
-}
-.sl .courses_first .courses_second {
-	width: 320px;
-	height: 460px;
-	margin: 50px 0;
-	background-color: #fff;
-	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
-	border-radius: 5px;
-	font-size: 16px;
-}
-.course_program-text {
-	font-size: 20px;
-}
-.slick-dots {
-	display: flex;
-	justify-content: center;
-	list-style: none;
-
-	
-} 
-	
-.slick-dots button {
-	margin: 20px;
-	border-radius: 50%;
-	width: 30px;
-	height: 30px;
-	font-size: 0;
-	background-color: #019ED3;;
-	border:  none;
-}
-
-.title_page-courses {
-	display: none;
-}
-
-.block_price {
-	display: none;
-}
-.sl_price {
-	display: flex;
-	width: 300px;
-	
-}
-.sl_price .block_price-item {
-	background-color: #fff;
-	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
-	border-radius: 5px;
-	font-size: 16px;
-	
-}
-.mob_block_price {
-	margin-bottom: 460px;
-	margin-left: 40px;
-	display: block;
-}
+  .block_price {
+    display: none;
+  }
+  .sl_price {
+    display: flex;
+    width: 360px;
+  }
+  .sl_price .block_price-item {
+    background-color: #fff;
+    /* box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25); */
+    border: 1px solid #000;
+    /* border-radius: 5px; */
+    font-size: 16px;
+    /* margin: 0 5px; */
+    margin-right: 5px;
+  }
+  .mob_block_price {
+    margin-bottom: 460px;
+    margin-left: 5px;
+    display: block;
+  }
 }

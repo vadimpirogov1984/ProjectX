@@ -547,7 +547,8 @@ body.is-mobmenu-open .mobile_main {
 }
 .contacts {
 	background-image: url(../img/map.png);
-	background-repeat: no-repeat;
+  background-repeat: no-repeat;
+  background-position: center center;
 	height: 420px;
 	position: relative;
 }
@@ -909,7 +910,7 @@ line-height: 43px;
   .courses_second-text p {
     margin: 0;
   }
-  .slick-dots li.slick-active button {
+  .slick-dots li .slick-active button {
   }
   .slick-dots li .slick-active button:before {
     background-color: #fff;

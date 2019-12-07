@@ -240,12 +240,13 @@ body.is-mobmenu-open .mobile_main {
 }
 .nav_header-list a {
   text-decoration: none;
-  padding-left: 70px;
+  margin-left: 70px;
   color: #000;
   font-weight: bold;
   font-size: 20px;
   line-height: 23px;
 }
+
 
 @media (max-width: 768px) {
   .nav_header-list a {

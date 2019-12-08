@@ -1,4 +1,4 @@
-/* header*/
+
 body {
   font-family: "Roboto Slab", serif;
   padding: 0;
@@ -8,99 +8,21 @@ ul {
   margin: 0;
   padding: 0;
 }
-/*Блок отзывов*/
-.container {
-  background-color: #019ED3;
-}
-.main {
-margin: 0 auto;
-width: 1080px;
-height: 650px;
-}
-.title_page-sl {
-font-size: 36px;
-font-weight: bold;
-color: #002F7D;
-text-align: center;
-margin-top: 0;
-padding-top: 50px;
-text-transform: uppercase;
-}
-.slick-track {
-padding-top: 0;
-}
-.sl_slide{
-display: flex;
-width: 1080px;
-}
-.sl_slide .sl__slide {
-width: 370px;
-height: 460px;
-margin: 20px 0;
-background-color: #fff;
-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
-border-radius: 5px;
-}
-.sl_slide .sl__slide img {
-width: 150px;
-height: 150px;
-padding: 70px 100px 5px 100px;
-}
-.sl_slide .sl__slide .title {
-padding: 20px 100px 0 100px;
-font-weight: bold;
-}
-.sl_slide .sl__slide .text {
-padding: 5px 10px;
-}
-.slick-slide-control01 {
-width: 50px;
-height: 50px;
-}
-.sl_slide .slick-center  {
-transform: scale(1.15);
-}
-.sl_slide .slick-dots li button {
-border: 5px solid #fff;
-border-radius: 50%;
-}
 
-.sl_slide .slick-dots li button:before {
-content: '';
-width: 20px;
-height: 20px;
-opacity: 1;
-border-radius: 50%;
-}
-.sl_slide .slick-dots li .slick-active:hover,
-.sl_slide .slick-dots li .slick-active button {
-border-color: #blue;
-}
-.sl_slide .slick-dots li .slick-active:hover:before, 
-.sl_slide .slick-dots li .slick-active button:before {
-background-color: #fff;
-opacity: 1;
-}
-.slick-dots li {
-    margin: 0 25px;
-}
-.slick-dots {
-    margin-bottom: -10px;
-}
-.slick-track {
-padding-top: 0;
-}
-p {
-font-size: 12px;
-font-weight: 400;
-}
-.multiple-review .slick-initialized {
-  width: 1080px;
-}
-.slick-slide-control01 {
-	width: 50px;
-	height: 50px;
-}
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
 /* Адаптив для планшета */
 
 body.is-mobmenu-open {
@@ -112,38 +34,24 @@ body.is-mobmenu-open .mobile_main {
   top: 0;
 }
 
-@media (max-width: 1024px) {
-  
+@media (max-width: 994px) {
+  .conteiner {
+    max-width: 750px;;
+  }
   .logo {
     margin-left: 30px;
   }
-  .block_result,
-  .block_chart,
-  .about_coach,
-  .block_opportunity {
+ 
+  .about_coach {
     margin-right: 25px;
     margin-left: 25px;
   }
-
-  .block_courses {
-    margin-left: 15px;
-  }
-  .nav_footer {
-    margin-left: 15px;
-  }
-  .main_page-title h1 {
-    font-size: 60px;
-  }
-  .main_page-title p {
-    font-size: 35px;
-  }
-  .my_progress {
-    margin-right: 30px;
-  }
-  .social_icon-footer {
-    padding-right: 30px;
+  .about_coach {
+    align-items: center;
   }
 }
+
+
 
 /* ------------------- */
 
@@ -152,23 +60,47 @@ body.is-mobmenu-open .mobile_main {
   margin: 0 auto;
   box-sizing: content-box;
 }
+.header-background {
+  background-color: whitesmoke;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 17;
+}
+.header-background::before {
+ content: '';
+  background-color: whitesmoke;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+
+}
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  position: relative;
+  z-index: 3;
 }
 .mobile_main {
   display: none;
 }
+
+                                    /* css logo img */
 .logo {
+padding-top: 20px;
+padding-bottom: 20px;
+}
+/* .logo {            
   position: relative;
   width: 274px;
   height: 76px;
-  border: 1px solid #000000;
+  border: 1px solid #000000;           css верстка logo
   box-sizing: border-box;
   text-align: center;
+  margin: 10px  0 10px 10px;
 }
 .logo_name {
   width: 222.61px;
@@ -230,7 +162,7 @@ body.is-mobmenu-open .mobile_main {
   border-radius: 50%;
   width: 7.16px;
   height: 5.88px;
-}
+} */
 
 .nav_header-list,
 .nav_footer-list {
@@ -243,24 +175,27 @@ body.is-mobmenu-open .mobile_main {
   margin-left: 70px;
   color: #000;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 22px;
   line-height: 23px;
+  padding-bottom: 10px;
 }
+
 .list-nav__link:hover {
 
-  border-bottom: 3px solid tomato;
+  border-bottom: 4px solid #002f7d;
+  border-radius: 5px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 960px) {
   .nav_header-list a {
     padding-left: 20px;
     font-size: 16px;
   }
   .main_page-title h1 {
-    font-size: 30px;
+    font-size: 40px;
   }
   .main_page-title p {
-    font-size: 20px;
+    font-size: 30px;
   }
   .main_page-foto p {
     font-size: 16px;
@@ -271,7 +206,17 @@ body.is-mobmenu-open .mobile_main {
   .chart_title {
     font-size: 30px;
   }
-}
+    .block_chart {
+      margin: 0 30px ;
+    }
+    .block_opportunity {
+      margin: 0 30px;
+    }
+   .my_progress-text {
+      margin-right: 30px;;
+    }
+  }
+
 
 /* Главная страница */
 .mobile_page {
@@ -280,6 +225,7 @@ body.is-mobmenu-open .mobile_main {
 .main_page {
   background-color: #002f7d;
   min-height: 800px;
+  margin-top: 90px;
 }
 .cont {
   display: flex;
@@ -294,21 +240,22 @@ body.is-mobmenu-open .mobile_main {
   margin-left: 50px;
 }
 .link {
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 19px;
-  color: #ffffff;
-  border: 1px solid #019ed3;
-  border-radius: 5px;
-  background-color: #019ed3;
-  text-decoration: none;
-  padding: 20px 30px;
-  text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    color: #ffffff;
+    border: 1px solid #019ed3;
+    border-radius: 5px;
+    background-color: #019ed3;
+    text-decoration: none;
+    padding: 20px 30px;
+    text-align: center;
 }
 .link:hover {
   color: #019ED3;
-    background-color: #FFFFFF;
-      border: 1px solid #019ED3;
+  background-color: #FFFFFF;
+  border: 1px solid #019ED3;
+  transition:  all 0.4s;
 
 }
 .main_page-foto {
@@ -447,6 +394,10 @@ body.is-mobmenu-open .mobile_main {
   line-height: 34px;
   max-width: 458px;
 }
+.coach-text__marker {
+  font-weight: bold;
+  color: #019ED3;
+}
 .about_coach-img {
   padding-top: 25px;
 }
@@ -531,6 +482,99 @@ body.is-mobmenu-open .mobile_main {
   font-weight: bold;
   font-size: 22px;
 }
+/*Блок отзывов*/
+.container {
+  background-color: #019ED3;
+}
+.main {
+  margin: 0 auto;
+  width: 1080px;
+  height: 650px;
+}
+.text-content {
+  font-size: 14px;
+}
+.title_page-sl {
+  font-size: 36px;
+  font-weight: bold;
+  color: #002F7D;
+  text-align: center;
+  margin-top: 0;
+  padding-top: 50px;
+  text-transform: uppercase;
+}
+.slick-track {
+  padding-top: 0;
+}
+.sl_slide{
+  display: flex;
+  width: 1080px;
+}
+.sl_slide .sl__slide {
+  width: 370px;
+  height: 460px;
+  margin: 20px 0;
+  background-color: #fff;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+.sl_slide .sl__slide img {
+  width: 150px;
+  height: 150px;
+  padding: 70px 100px 5px 100px;
+}
+.sl_slide .sl__slide .title {
+  padding: 20px 100px 0 100px;
+  font-weight: bold;
+}
+.sl_slide .sl__slide .text {
+  padding: 5px 10px;
+}
+.slick-slide-control01 {
+  width: 50px;
+  height: 50px;
+}
+.sl_slide .slick-center  {
+  transform: scale(1.15);
+}
+.sl_slide .slick-dots li button {
+  border: 5px solid #fff;
+  border-radius: 50%;
+}
+
+.sl_slide .slick-dots li button:before {
+  content: '';
+  width: 20px;
+  height: 20px;
+  opacity: 1;
+  border-radius: 50%;
+}
+.sl_slide .slick-dots li .slick-active:hover,
+.sl_slide .slick-dots li .slick-active button {
+  border-color: blue;
+}
+.sl_slide .slick-dots li .slick-active:hover:before, 
+.sl_slide .slick-dots li .slick-active button:before {
+  background-color: #fff;
+  opacity: 1;
+}
+.slick-dots li {
+    margin: 0 25px;
+}
+.slick-dots {
+    margin-bottom: -10px;
+}
+.slick-track {
+  padding-top: 0;
+}
+
+.multiple-review .slick-initialized {
+  width: 1080px;
+}
+.slick-slide-control01 {
+	width: 50px;
+	height: 50px;
+}
 /*Призыв к действию*/
 .wrap-call-to {
 	background-color: #002F7D;
@@ -562,8 +606,8 @@ body.is-mobmenu-open .mobile_main {
 }
 .contacts span {
 	font-weight: bold;
-font-size: 40px;
-line-height: 43px;
+  font-size: 40px;
+  line-height: 43px;
 }
 .contacts-desk {
 	position: absolute;
@@ -600,7 +644,7 @@ line-height: 43px;
 	font-size: 14px;
 	font-weight: bold;
 }
-@media (max-width: 768px) {
+@media (max-width: 960px) {
   .block_chart div {
     height: 190px;
     width: 190px;
@@ -817,10 +861,15 @@ line-height: 43px;
 }
 .nav_footer-list a {
   color: #fff;
-  font-size: 14px;
-  font-weight: normal;
-  padding-right: 50px;
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 50px;
   text-decoration: none;
+}
+.nav_footer-list a:hover {
+  border-bottom: 4px solid #fff;
+  border-radius: 5px;
+  padding-bottom: 10px;
 }
 .logo_footer {
   padding: 20px 10px;
@@ -829,6 +878,8 @@ line-height: 43px;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  font-size: 12px;
+  color: #fff;
 }
 .social_icon-footer {
   display: flex;
@@ -1291,4 +1342,92 @@ line-height: 43px;
     margin-left: 5px;
     display: block;
   }
+}
+.footer-title {
+  margin-bottom: 50px;
+}
+
+/* New block */
+
+.registration {
+  background-image: linear-gradient(to right, #019ed3,  #002f7d );
+}
+.conteiner_registr {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.free-lesson {
+  display: flex;
+ justify-content: center;
+  color: #fff;
+}
+.lesson-record {
+  margin-right: 100px ;
+}
+.lesson-price {
+  margin-right: 100px ;
+}
+.lesson-record__title {
+  font-size: 30px;
+  font-weight: 700;
+}
+.lesson-record__lesson-date {
+  font-size: 22px;
+}
+.lesson-price__title {
+  display: block;
+  margin-top: 50px;
+  margin-bottom: 33px;
+  font-size: 22px;
+}
+.lesson-price__free {
+  font-size: 30px;
+  font-weight: 800;
+}
+.lessen-sale__percent {
+  font-size: 22px;
+}
+.list {
+  display: flex;
+  align-items: center;
+  margin-top: 95px;
+  list-style: none;
+  
+}
+.list li {
+  padding-right: 15px;
+}
+
+/* form */
+
+
+.forms-data {
+  height: 50px;
+  border: none;
+  border-radius: 50px;
+  margin-right: 10px;
+}
+.forms {
+  margin-top: 30px;;
+  margin-left: 150px;
+}
+.forms-data:hover {
+  transform: scale(1.1);
+  transition: all 0.4s;
+}
+.btn-application {
+  text-align: center;
+  background: #019ed3;
+  border-radius: 50px;
+  font-size: 20px;
+  color: #ffffff;
+  border-color: #019ed3;
+  padding: 15px 30px;
+}
+.legal-text {
+  text-align: center;
+  font-size: 14px;
+  color: #c4c4c4;
+  margin-top: 20px;;
+  padding-bottom: 30px;
 }

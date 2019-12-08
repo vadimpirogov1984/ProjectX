@@ -15,26 +15,31 @@
 </head>
 
 <body>
+	<div class="header-background">
 	<div class="conteiner">
 		<header class="header">
-			<div class="logo">
+	<!-- 		<div class="logo">
 				<div class="logo_item"></div>
 				<span class="logo_name">STEYN</span>
 				<div class="logo_item1"></div>
 				<div class="logo_item2"></div>
 				<span class="logo_name-sch">BUSINESS SCHOOL</span>
 				<div class="logo_item3"></div>
+			</div> -->
+			<div class="logo">
+			<a href="#" class="link-main"><img src="img/Logo2.png" alt="coach" width="220" height="80"></a>
 			</div>
 			<nav class="nav_header">
 				<ul class="nav_header-list">
 					<li><a href="#courses" class="list-nav__link">Курсы</a></li>
 					<li><a href="#about_coach" class="list-nav__link">О тренере</a></li>
-					<li><a href="#reviews" class="list-nav__link">Отзывы</a></li>
+					<li><a href="#rewievs" class="list-nav__link">Отзывы</a></li>
 					<li><a href="#price" class="list-nav__link">Стоимость</a></li>
 				</ul>
 			</nav>
 		</header>
 	</div>
+</div>
 	<main class="main_page">
 		<div class="conteiner">
 			<div class="cont">
@@ -55,7 +60,7 @@
 					<ul class="social_icon-list">
 						<li><a href="https://facebook.com"><img src="img/facebook.png" alt=""></a></li>
 						<li><a href="https://twitter.com/"><img src="img/twitter.png" alt=""></a></li>
-						<li><a href=".ru"><img src="img/instagram.png" alt=""></a></li>
+						<li><a href="https://www.instagram.com/"><img src="img/instagram.png" alt=""></a></li>
 					</ul>
 				</div>
 				<div class="my_progress">
@@ -138,7 +143,7 @@
 				</ul>
 			</div>
 		</div>
-		<div class="link_center"> <a href="" class="link_want">Хочу!</a>
+		<div class="link_center"> <a href="" class="link_want link">Хочу!</a>
 		</div>
 	</div>
 	<div class="conteiner">
@@ -148,16 +153,16 @@
 				<img src="img/Aboutcoach.png" alt="" class="about_img">
 			</div>
 			<div class="about_coach-text">
-				<p class="name_coach-text"><span>Сергей Штейн </span>- мастер слова и дела.</p>
+				<p class="name_coach-text"><span class="coach-text__marker">Сергей Штейн </span>- мастер слова и дела.</p>
 
 				<p>Его книга “Начни новую жизнь с понедельника” стала бестселлером в 2018 году. Продана тиражом более
-					<span>550 000</span> экземпляров, а тренинг “Лидерство и управление другими” был признан лучшим, по
+					<span class="coach-text__marker">550 000</span> экземпляров, а тренинг “Лидерство и управление другими” был признан лучшим, по
 					версии журнала “Эксперт” 2018 для бизнеса.</p>
 
-				<p>За свою карьеру обучил более <span>1000</span> человек, провел 70 открытых и 25 корпоративных
+				<p>За свою карьеру обучил более <span class="coach-text__marker">1000</span> человек, провел 70 открытых и 25 корпоративных
 					тренингов в России и СНГ.</p>
 
-				<p>Написал более <span>200</span> статей по теме бизнеса и продаж.</p>
+				<p>Написал более <span class="coach-text__marker">200</span> статей по теме бизнеса и продаж.</p>
 			</div>
 		</div>
 		<div class="about_coach-certificate">
@@ -172,6 +177,42 @@
 			</div>
 		</div>
 	</div>
+	<section class="registration">
+			<div class="conteiner_registr">
+				<div class="free-lesson">
+					<div class="lesson-record">
+							<h4 class="lesson-record__title">Запись на вводное занятие</h4>
+							<p class="lesson-record__lesson-date">22 января 2020</p>
+					</div>
+					<div class="lesson-price">
+							<span class="lesson-price__title">Стоимость:</span> 
+							<span class="lesson-price__free">Бесплатно</span>
+					</div>
+					<div class="lessen-sale">
+						<ul class="list">
+					<li>	<img src="img/discount.png" alt="" width="40" height="40" class="discount-img"></li>
+						<li>	<p class="lessen-sale__percent">+ скидка на весь курс</p></li>
+						</ul>
+					</div>
+				</div>
+				<div class="form-registration">
+					<form class="forms">
+						<input type="text" placeholder="    Имя" class="forms-data">
+						<input type="email" placeholder="    E-mail" class="forms-data">
+						<input type="tel" placeholder="    Телефон" class="forms-data">
+						<input type="text" placeholder="    Город" class="forms-data">
+						<button class="btn-application link">Оставить заявку</button>
+					</form>
+				</div>
+			</div>
+			<p class="legal-text">Нажимая на кнопку «Оставить заявку» я соглашаюсь на обработку персональных данных в соответствии с Условиями</p>
+			</section>
+<!-- 	<div class="wrap-call-to">
+			<div class="call-to-action">
+				<div class="title">Запишись на курс сегодня</div>
+				<button class="link">Записаться</button>
+			</div>
+		</div> 	 -->
 	<div class="conteiner">
 		<h2 class="title_page">Чему вы научитесь</h2>
 		<div class="block_result">
@@ -220,14 +261,14 @@
 	</div>
 	<div class="block_reviews">
 		<div class="container">
-			<h2 class="title_page"><a name="rewievs"></a>Отзывы</h2>
+			<h2 class="title_page" id="rewievs"><a name="rewievs"></a>Отзывы</h2>
 			<div class="main">
 				<div class="sl_slide multiple-review">
 					<div class="sl__slide ">
 						<img src="img/reviews1.png" alt="Фото участника" class="sl__img">
 						<div class="title">Денис Тарасов</div>
 						<div class="text">
-							<p>«Это глубокое погружение в атмосферу продаж, понимание как мы можем помочь клиенту и
+							<p class="text-content">«Это глубокое погружение в атмосферу продаж, понимание как мы можем помочь клиенту и
 								себе. Инструментарий – полный восторг! Ты учишься у опытного практикующего коуча.
 								Появилась осознанность и вкус жизни! Я понимаю, куда мне идти. Эти курсы рекомендую
 								вообще всем! Жизнь реально меняется!»</p>
@@ -237,7 +278,7 @@
 						<img src="img/reviews3.png" alt="Фото участника" class="sl__img">
 						<div class="title">Оксана Назаренко</div>
 						<div class="text">
-							<p>«В конце курса ты понимаешь, что нужно делать, как двигаться дальше и как строить свою
+							<p class="text-content">«В конце курса ты понимаешь, что нужно делать, как двигаться дальше и как строить свою
 								практику. Курс повлиял на мою жизнь кардинальным образом, месяцы обучения круто изменили
 								мою жизнь. Это самый оптимальный маршрут к успеху. Крутая команда, крутой тренер,
 								большое Вам спасибо!»</p>
@@ -247,7 +288,7 @@
 						<img src="img/reviews2.png" alt="Фото участника" class="sl__img">
 						<div class="title">Иннокентий Чижов</div>
 						<div class="text">
-							<p>«Все очень конструктивно и доходчиво, очень поможет в работе и управлении командой.
+							<p class="text-content">«Все очень конструктивно и доходчиво, очень поможет в работе и управлении командой.
 								Сергей профессионал и этим все сказано. Отличная организация тренинга!»</p>
 						</div>
 					</div>
@@ -255,7 +296,7 @@
 						<img src="img/reviews4.png" alt="Фото участника" class="sl__img">
 						<div class="title">Алла Тимофеева</div>
 						<div class="text">
-							<p>«Самые позитивные впечатления о тренинге. Много нового, большой объем новых инструментов
+							<p class="text-content">«Самые позитивные впечатления о тренинге. Много нового, большой объем новых инструментов
 								для работы, которые были даны в очень удобной для меня форме. Вне сомнений профессионал.
 								Сергей, спасибо! Обязательно посещу еще какой-нибудь тренинг у Вас. Все достойно.»</p>
 						</div>
@@ -264,7 +305,7 @@
 						<img src="img/reviews5.png" alt="Фото участника" class="sl__img">
 						<div class="title">Степан Колпаков</div>
 						<div class="text">
-							<p>«Комфортная обстановка, живой процесс, много ценной информации заставляет думать,
+							<p class="text-content">«Комфортная обстановка, живой процесс, много ценной информации заставляет думать,
 								стимулирует дальнейшее образование в данном направлении. Корректный, практичный,
 								авторитетный тренер, хорошо ориентирован на каждого слушателя. Отличная организация
 								тренинга.»</p>
@@ -276,7 +317,7 @@
 	</div>
 
 	<div class="mobile_courses">
-		<h2 class="title_page-mobcourses" id="courses">Выбери свой тренинг</h2>
+		<h2 class="title_page-mobcourses" id="courses-mob">Выбери свой тренинг</h2>
 		<div class="mob_block_courses">
 			<div class="sl multiple-items">
 				<div class="courses_first">
@@ -334,7 +375,7 @@
 					<p class="course_program-text">Сферы влияния лидера.</p>
 					<p class="course_program-text">Настройка сотрудников на результат.</p>
 					<div class="block_btn">
-						<button class="btn_sign">Записаться</button>
+						<button class="btn_sign link">Записаться</button>
 					</div>
 				</div>
 			</div>
@@ -356,7 +397,7 @@
 					<p class="course_program-text">Переговоры: шаг за шагом.</p>
 					<!-- <p class="course_program-text1">Переговорный практикум.</p> -->
 					<div class="block_btn">
-						<button class="btn_sign">Записаться</button>
+						<button class="btn_sign link">Записаться</button>
 					</div>
 				</div>
 			</div>
@@ -379,7 +420,7 @@
 				<p class="price_item-text">Доступ в закрытое сообщество выпускников на 12 месяцев</p>
 				<p class="price_item-text">Доступ в закрытую группу Facebook на 12 месяцев</p>
 				<div class="block_btn-buy">
-					<button class="btn-buy">Купить</button>
+					<button class="btn-buy link">Купить</button>
 				</div>
 
 			</div>
@@ -396,7 +437,7 @@
 				<p class="price_item-text">Доступ в закрытую группу Facebook на 12 месяцев</p>
 				<p class="price_item-text">Индивидуальный сценарий продаж от специалиста школы</p>
 				<div class="block_btn-buy">
-					<button class="btn-buy">Купить</button>
+					<button class="btn-buy link">Купить</button>
 				</div>
 
 			</div>
@@ -415,7 +456,7 @@
 				<p class="price_item-text">Индивидуальный сценарий продаж от специалиста школы</p>
 
 				<div class="block_btn-buy">
-					<button class="btn-buy">Купить</button>
+					<button class="btn-buy link">Купить</button>
 				</div>
 
 			</div>
@@ -435,7 +476,7 @@
 				<p class="price_item-text">Сопровождение куратора, проверка ДЗ, ответы на вопросы</p>
 
 				<div class="block_btn-buy">
-					<button class="btn-buy">Купить</button>
+					<button class="btn-buy link">Купить</button>
 				</div>
 
 			</div>
@@ -451,7 +492,7 @@
 				<p class="price_item-text">Доступ в закрытое сообщество выпускников на 12 месяцев</p>
 
 				<div class="block_btn-buy">
-					<button class="btn-buy">Купить</button>
+					<button class="btn-buy link">Купить</button>
 				</div>
 
 			</div>
@@ -469,19 +510,15 @@
 
 
 				<div class="block_btn-buy">
-					<button class="btn-buy">Купить</button>
+					<button class="btn-buy link">Купить</button>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="wrap-call-to">
-		<div class="call-to-action">
-			<div class="title">Запишись на курс сегодня</div>
-			<button class="link">Записаться</button>
-		</div>
-	</div>
+	<h2 class="title_page footer-title">Контакты</h2>
 	<div class="contacts">
 		<div class="conteiner">
+			
 			<div class="contacts-desk">
 				<div class="contacts-content">
 					<div class="contacts-header">
@@ -510,16 +547,16 @@
 						<li><a href="#price">Стоимость</a></li>
 					</ul>
 				</nav>
-				<img src="img/Logo2.png" alt="" class="logo_footer">
+			<a href="#">	<img src="img/Logo2.png" alt="" class="logo_footer" width="200" height="80"></a>
 			</div>
 			<div class="footer_info">
 				<div class="footer_addres">
-					<p>ОГРНИП 8594384600895408 ИНН 9423423556</p>
-					<p> Адрес: Нижний Новгород г, Бекетова ул, дом № 32</p>
-					<p>телефон: +7 431 428 99 71</p>
-					<p>e-mail: business@gmail.com</p>
+					<p class="addres-text">ОГРНИП 8594384600895408 ИНН 9423423556</p>
+					<p class="addres-text"> Адрес: Нижний Новгород г, Бекетова ул, дом № 32</p>
+					<p class="addres-text">Телефон: <a	href="tel:+78314289971">8(831) 428-99-71</a></p>
+					<p class="addres-text">E-mail: business@gmail.com</p>
 				</div>
-				<div>
+				<div class="legal-link">
 					<p>Пользовательское соглашение</p>
 					<p>Политика конфиденциальности</p>
 				</div>
@@ -527,11 +564,13 @@
 					<ul class="social_icon-footer">
 						<li><a href="https://facebook.com"><img src="img/facebook.png" alt=""></a></li>
 						<li><a href="https://twitter.com/"><img src="img/twitter.png" alt=""></a></li>
-						<li><a href=".ru"><img src="img/instagram.png" alt=""></a></li>
+						<li><a href="https://www.instagram.com/"><img src="img/instagram.png" alt=""></a></li>
 					</ul>
 				</div>
 			</div>
 	</footer>
+
+
 	<script src="js/jquery-3.2.1.min.js"></script>
 	<script src="js/slick/slick.min.js"></script>
 	<script src="js/main.js"></script>

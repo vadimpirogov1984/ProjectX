@@ -37,6 +37,9 @@
 					<li><a href="#price" class="list-nav__link">Стоимость</a></li>
 				</ul>
 			</nav>
+			<div class="header-burger">
+				<span></span>
+			</div>
 		</header>
 	</div>
 </div>
@@ -58,23 +61,25 @@
 			<div class="cont">
 				<div class="social_icon">
 					<ul class="social_icon-list">
-						<li><a href="https://facebook.com"><img src="img/facebook.png" alt=""></a></li>
-						<li><a href="https://twitter.com/"><img src="img/twitter.png" alt=""></a></li>
-						<li><a href="https://www.instagram.com/"><img src="img/instagram.png" alt=""></a></li>
+						<li><a href="https://facebook.com"><img src="img/facebook(3).png" alt=""  width="30" height="30"></a></li>
+						<li><a href="https://twitter.com/"><img src="img/twitter(2).png" alt=""  width="30" height="30"></a></li>
+						<li><a href="https://www.instagram.com/"><img src="img/instagram(1).png" alt="" width="30" height="30"></a></li>
 					</ul>
 				</div>
 				<div class="my_progress">
 					<a href="#" class="my_progress-text">Моя история успеха</a>
-				</div>
-			</div>
 		</div>
 	</main>
 	<section class="test_fon">
+			<div class="head-menu">
+				<div class="burger"><span></span></div>
+			</div>
 		<section class="mobile_page">
 			<div class="gam-wrapper js-mobmenu-open">
 				<div class="gam">
 				</div>
 			</div>
+			
 			<div class="mobile_page-title">
 				<h1>Бизнес-тренинг</h1>
 				<p>«Лидерство и управление другими»</p>
@@ -100,9 +105,9 @@
 		</nav>
 		<div class="msocial_icon">
 			<ul class="msocial_icon-list">
-				<li><a href="https://facebook.com"><img src="img/facebook.png" alt=""></a></li>
-				<li><a href="https://twitter.com/"><img src="img/twitter.png" alt=""></a></li>
-				<li><a href=".ru"><img src="img/instagram.png" alt=""></a></li>
+					<li><a href="https://facebook.com"><img src="img/facebook(3).png" alt=""  width="30" height="30"></a></li>
+					<li><a href="https://twitter.com/"><img src="img/twitter(2).png" alt=""  width="30" height="30"></a></li>
+					<li><a href="https://www.instagram.com/"><img src="img/instagram(1).png" alt="" width="30" height="30"></a></li>
 			</ul>
 		</div>
 	</div>
@@ -189,7 +194,7 @@
 							<span class="lesson-price__free">Бесплатно</span>
 					</div>
 					<div class="lessen-sale">
-						<ul class="list">
+						<ul class="sale-list">
 					<li>	<img src="img/discount.png" alt="" width="40" height="40" class="discount-img"></li>
 						<li>	<p class="lessen-sale__percent">+ скидка на весь курс</p></li>
 						</ul>
@@ -562,9 +567,9 @@
 				</div>
 				<div>
 					<ul class="social_icon-footer">
-						<li><a href="https://facebook.com"><img src="img/facebook.png" alt=""></a></li>
-						<li><a href="https://twitter.com/"><img src="img/twitter.png" alt=""></a></li>
-						<li><a href="https://www.instagram.com/"><img src="img/instagram.png" alt=""></a></li>
+							<li><a href="https://facebook.com"><img src="img/facebook(3).png" alt=""  width="30" height="30"></a></li>
+						<li><a href="https://twitter.com/"><img src="img/twitter(2).png" alt=""  width="30" height="30"></a></li>
+						<li><a href="https://www.instagram.com/"><img src="img/instagram(1).png" alt="" width="30" height="30"></a></li>
 					</ul>
 				</div>
 			</div>
@@ -623,6 +628,14 @@
 		});
 
 	</script>
+	<script>
+			$(document).ready(function() {
+				$('.burger').click(function(event) {
+					$('.burger,.mobile_main').toggleClass('active');
+				});
+			});
+		
+		</script>
 	<script>
 		document.querySelector('.gam-wrapper').onclick = function () {
 			document.querySelector('.gam').classList.toggle('gam-active');

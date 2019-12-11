@@ -291,6 +291,9 @@ padding-bottom: 20px;
 .block_chart span {
   font-weight: bold;
 }
+.block_chart span:last-child {
+  padding-left: 10px;
+}
 .block_chart-title {
   font-size: 36px;
   font-weight: bold;
@@ -1097,8 +1100,6 @@ padding-bottom: 20px;
   .courses_second-text p {
     margin: 0;
   }
-  .slick-dots li .slick-active button {
-  }
   .slick-dots li .slick-active button:before {
     background-color: #fff;
     opacity: 1;
@@ -1176,7 +1177,7 @@ padding-bottom: 20px;
 		border: 1px solid #019ED3;
 
 }
-  .gam {
+/*   .gam {
     position: relative;
     width: 30px;
     height: 5px;
@@ -1203,20 +1204,8 @@ padding-bottom: 20px;
     background-color: #fff;
     display: block;
     transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
-  }
-/*   .gam.gam-active {
-    background-color: transparent;
-  }
-  .gam.gam-active::before {
-    transform: rotate(45deg);
-    top: 0;
-    transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
-  }
-  .gam.gam-active::after {
-    transform: rotate(-45deg);
-    top: 0;
-    transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
   } */
+
   .gam-wrapper {
     width: 30px;
     height: 30px;
@@ -1227,7 +1216,7 @@ padding-bottom: 20px;
   }
   .mobile_main {
     opacity: 0;
-    transition: all 0.5s ease;
+    
     background: #002f7d;
     display: flex;
     flex-direction: column;
@@ -1236,12 +1225,15 @@ padding-bottom: 20px;
     font-size: 24px;
     font-weight: bold;
     color: #000000;
+    
   }
   .mobile_main.active {
     opacity: 1;
+    position: fixed;
     z-index: 999;
     top: 0;
     width: 100%;
+    transition: all 0.4s;
     
   }
   .mobile_nav-list {
@@ -1274,11 +1266,14 @@ padding-bottom: 20px;
     z-index: 2;
   }
   .mobile_main {
+    margin-top: 60px;
     width: 100%;
     min-height: 580px;
     position: absolute;
     z-index: 1;
-    
+  }
+  .mob_logo {
+    margin-top: 20px;
   }
   .bis_tre {
     padding-top: 40px;
@@ -1536,33 +1531,91 @@ padding-bottom: 20px;
     position: fixed;
     height: 60px;
     width: 100%;
-    background-color: tomato;
+    background-color: whitesmoke;
     z-index: 9999;
   }
   .burger {
     position: relative;
-  width: 30px;
-  height: 3px;
-  background-color: wheat;
-  margin: 15px;;
+    width: 30px;
+    height: 4px;
+    background-color: rgb(41, 37, 31);
+    margin: 15px ;
   }
   .burger:after {
     content: '';
     width: 30px;
-  height: 4px;
-  position: absolute;
-  top: 20px;
-  background-color: wheat;
+    height: 4px;
+    position: absolute;
+    top: 20px;
+    background-color: rgb(41, 37, 31);
+    transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
   }
   .burger:before {
     content: '';
     width: 30px;
-  height: 4px;
-  position: absolute;
-  top: 10px;
-  background-color: wheat;
- }
- .burger.active {
-  transition: all 0.4s;
- }
+    height: 4px;
+    position: absolute;
+    top: 10px;
+    background-color: rgb(41, 37, 31);
+    transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+  }
+  .burger.active {
+    transition: all 0.4s;
+    }
+  .burger.active {
+    
+      background-color: transparent;
+    }
+  .burger.active::before {
+      transform: rotate(45deg);
+      top: 0;
+      transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+    }
+    .burger.active::after {
+      transform: rotate(-40deg);
+      top: 0;
+      transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+    } 
+ 
+}
+
+@media (max-width: 780px) { 
+  .header {
+    display: none;
+  }
+  .head-menu {
+    position: fixed;
+    height: 60px;
+    width: 100%;
+    background-color: whitesmoke;
+    z-index: 9999;
+  }
+  .burger {
+    position: relative;
+    width: 30px;
+    height: 4px;
+    background-color: rgb(41, 37, 31);
+    margin: 15px ;
+  }
+  .burger:after {
+    content: '';
+    width: 30px;
+    height: 4px;
+    position: absolute;
+    top: 20px;
+    background-color: rgb(41, 37, 31);
+    transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+  }
+  .burger:before {
+    content: '';
+    width: 30px;
+    height: 4px;
+    position: absolute;
+    top: 10px;
+    background-color: rgb(41, 37, 31);
+    transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+  }
+  .burger.active {
+    transition: all 0.4s;
+  }
 }

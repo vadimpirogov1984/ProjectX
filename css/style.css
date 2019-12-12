@@ -66,6 +66,7 @@ body.is-mobmenu-open .mobile_main {
   align-items: center;
   position: relative;
   z-index: 3;
+  height: 80px;
 }
 .mobile_main {
   display: none;
@@ -73,9 +74,10 @@ body.is-mobmenu-open .mobile_main {
 
                                     /* css logo img */
 .logo {
-padding-top: 20px;
-padding-bottom: 20px;
+padding-top: 5px;
+padding-left: 10px;
 }
+
 /* .logo {            
   position: relative;
   width: 274px;
@@ -207,19 +209,29 @@ padding-bottom: 20px;
 }
 .main_page {
   background-color: #002f7d;
-  min-height: 800px;
-  margin-top: 90px;
+  padding-bottom: 30px;
+  margin-top: 80px;
 }
 .cont {
   display: flex;
   justify-content: space-between;
 }
 .main_page-title {
+  margin-top: 140px;
+}
+.main_page-title  h1{ 
   font-weight: bold;
   font-size: 40px;
   line-height: 56px;
   color: #ffffff;
-  margin-top: 100px;
+  margin-left: 50px;
+}
+.main_page-title p {
+   font-weight: bold;
+  font-size: 40px;
+  line-height: 56px;
+  color: #ffffff;
+  
   margin-left: 50px;
 }
 .link {
@@ -678,7 +690,7 @@ padding-bottom: 20px;
 	font-size: 14px;
 	font-weight: bold;
 }
-@media (min-width: 760px) and (max-width: 960px){
+@media (min-width: 500px) and (max-width: 890px){
 .nav_header {
   font-size: 10px;;
 }
@@ -695,6 +707,7 @@ padding-bottom: 20px;
   .block_chart-bis,
   .block_chart-dream {
     background-size: 190px 190px;
+
   }
   .chart_title {
     font-size: 30px;
@@ -735,6 +748,14 @@ padding-bottom: 20px;
   .about_coach-certificate_list {
     margin-right: 30px;
     margin-left: 30px;
+  }
+  .block_result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+  }
+  .block_reviews {
+    display: none;
   }
 }
 
@@ -1036,7 +1057,7 @@ padding-bottom: 20px;
 }
 /* Мобильный адаптив */
 
-@media (max-width: 420px) {
+@media (max-width: 500px) {
   /* .sl_slide{
     flex-direction: column;
     width: 370px;
@@ -1579,10 +1600,27 @@ padding-bottom: 20px;
  
 }
 
-@media (max-width: 780px) { 
+@media (min-width: 500px) and (max-width: 780px) { 
   .header {
     display: none;
   }
+  .mobile_main.active {
+    position: fixed;
+    top: 0;
+    z-index: 9;
+    display: block;
+    width: 100%;
+    margin-top: 40px;
+    background-color:  #002f7d ;
+
+  }
+  .mobile_nav-list a {
+    text-decoration: none; 
+    text-align: center;
+    font-size: 22px;
+    color: #fff;
+  }
+
   .head-menu {
     position: fixed;
     height: 60px;
@@ -1617,5 +1655,54 @@ padding-bottom: 20px;
   }
   .burger.active {
     transition: all 0.4s;
+  }
+
+.msocial_icon-list {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+
+  }
+  .mobile_nav-list {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  }
+  .msocial_icon-list li {
+    margin: 10px;
+  }
+  .mob_logo {
+    display: none;
+  }
+  .lesson-price__free,
+  .lesson-record__title {
+    font-size: 24px;
+  }
+  .lessen-sale__percent,
+  .lesson-price__title,
+  .lesson-record__lesson-date {
+    font-size: 18px;
+  }
+  .lesson-price__title, {
+     margin-top: 50px;
+  }
+  .sale-list {
+    margin-top: 30px;
+  }
+  .lesson-price,
+  .lesson-record {
+    margin-right: 50px;
+  }
+  .forms {
+      display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+    margin: 0;
+
+  }
+  .forms-data {
+    margin: 5px;
   }
 }

@@ -74,80 +74,9 @@ body.is-mobmenu-open .mobile_main {
 
                                     /* css logo img */
 .logo {
-padding-top: 5px;
-padding-left: 10px;
+  padding-top: 5px;
+  padding-left: 10px;
 }
-
-/* .logo {            
-  position: relative;
-  width: 274px;
-  height: 76px;
-  border: 1px solid #000000;           css верстка logo
-  box-sizing: border-box;
-  text-align: center;
-  margin: 10px  0 10px 10px;
-}
-.logo_name {
-  width: 222.61px;
-  height: 35.39px;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 40px;
-  line-height: 43px;
-  text-align: center;
-  letter-spacing: 0.5em;
-  color: #000000;
-  padding-top: 10px;
-  padding-left: 20px;
-}
-.logo_name-sch {
-  width: 207px;
-  height: 9px;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 30px;
-  letter-spacing: 0.3em;
-  color: #000000;
-  padding-left: 26px;
-  padding-right: 26px;
-}
-.logo_item {
-  position: absolute;
-  left: 10px;
-  top: 5px;
-  background-color: #000;
-  border-radius: 50%;
-  width: 7.16px;
-  height: 5.88px;
-}
-.logo_item1 {
-  position: absolute;
-  left: 250px;
-  top: 5px;
-  background-color: #000;
-  border-radius: 50%;
-  width: 7.16px;
-  height: 5.88px;
-}
-.logo_item2 {
-  position: absolute;
-  left: 10px;
-  top: 64px;
-  background-color: #000;
-  border-radius: 50%;
-  width: 7.16px;
-  height: 5.88px;
-}
-.logo_item3 {
-  position: absolute;
-  left: 250px;
-  top: 64px;
-  background-color: #000;
-  border-radius: 50%;
-  width: 7.16px;
-  height: 5.88px;
-} */
 
 .nav_header-list,
 .nav_footer-list {
@@ -191,10 +120,10 @@ padding-left: 10px;
   .chart_title {
     font-size: 30px;
   }
-    .block_chart {
-      margin: 0 30px ;
+   .block_chart {
+     margin: 0 30px ;
     }
-    .block_opportunity {
+   .block_opportunity {
       margin: 0 30px;
     }
    .my_progress-text {
@@ -210,9 +139,9 @@ padding-left: 10px;
 .main_page {
   background-color: #002f7d;
   padding-bottom: 30px;
-  margin-top: 80px;
+  margin-top: 40px;
 }
-.cont {
+.main_page-content {
   display: flex;
   justify-content: space-between;
 }
@@ -231,8 +160,10 @@ padding-left: 10px;
   font-size: 40px;
   line-height: 56px;
   color: #ffffff;
-  
   margin-left: 50px;
+}
+.main_page-img {
+  padding-left: 50px;
 }
 .link {
     font-weight: bold;
@@ -1080,13 +1011,6 @@ padding-left: 10px;
   }
   .courses_first-text,
   .courses_second-text {
-    /* background: #ffffff;
-	  border: 1px solid #002f7d;
-	  border-radius: 20px 0;
-	  box-shadow: 10px 10px 5px rgba(0, 47, 125, 0.5);
-	  margin-left: 20px;
-	  font-size: 16px;
-	  line-height: 25px; */
     padding: 0px 10px;
     margin: 0 10px;
     width: 335px;
@@ -1099,20 +1023,7 @@ padding-left: 10px;
     /* border-radius: 25px 0 0 0;
     border: 1px solid #000; */
   }
-  /* .slick-dots li button:before {
-    content: "";
-    width: 10px;
-    height: 10px;
-    background: #000;
-    opacity: 1;
-    border-radius: 50%;
-    top: 50%;
-    left: 50%;
-    margin: -5px 0 0 -5px;
-  } */
-  /* .block_price-item:not(:last-child) {
-    margin-right: 5px;
-  } */
+ 
   .courses_first-text h4,
   .courses_second-text h4 {
     margin: 0;
@@ -1132,7 +1043,7 @@ padding-left: 10px;
   .header {
     display: none;
   }
-  .test_fon {
+  .mobile_background{
     background-image: url(../img/mobcoach.png);
   }
   .mobile_page {
@@ -1160,21 +1071,21 @@ padding-left: 10px;
   .mobile_page-title {
     margin-top: 100px;
   }
-  .coahc_name-page p {
+  .coach_name-page p {
     font-size: 12px;
     font-weight: normal;
     margin-left: 200px;
     text-transform: none;
     line-height: 18px;
   }
-  .coahc_name-page span {
+  .coach_name-page span {
     font-weight: 500;
     font-size: 16px;
     color: #ffffff;
     padding-top: 30px;
     margin-left: 200px;
   }
-  .coahc_name-page {
+  .coach_name-page {
     margin-top: 60px;
   }
   .link {
@@ -1198,34 +1109,6 @@ padding-left: 10px;
 		border: 1px solid #019ED3;
 
 }
-/*   .gam {
-    position: relative;
-    width: 30px;
-    height: 5px;
-    background-color: #fff;
-  }
-  .gam::after {
-    position: absolute;
-    left: 0;
-    top: 10px;
-    content: " ";
-    width: 30px;
-    height: 5px;
-    background-color: #fff;
-    display: block;
-    transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
-  }
-  .gam::before {
-    position: absolute;
-    left: 0;
-    top: -10px;
-    content: " ";
-    width: 30px;
-    height: 5px;
-    background-color: #fff;
-    display: block;
-    transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
-  } */
 
   .gam-wrapper {
     width: 30px;
@@ -1237,7 +1120,6 @@ padding-left: 10px;
   }
   .mobile_main {
     opacity: 0;
-    
     background: #002f7d;
     display: flex;
     flex-direction: column;
@@ -1597,7 +1479,69 @@ padding-left: 10px;
       top: 0;
       transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
     } 
- 
+  .block_reviews {
+    display: block;
+    width: 370px;
+  }
+  .sl__slide {
+    width: 335px;
+  }
+
+  .sl_slide .multiple-review {
+    width: 380px;
+  }
+  .main {
+    margin: 0 auto;
+    width: 370px;
+    height: 570px;
+  }
+  .container {
+    width: 370px;
+  }
+  .slick-initialized {
+    width: 370px;
+    height: 450px;
+  }
+  .slick-dots li button {
+    border: 5px solid #019ed3;
+    border-radius: 50%;
+  }
+
+  .slick-dots li.button:before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    opacity: 1;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    margin: -5px 0 0 -5px;
+  }
+  .slick-dots li.button:hover,
+  .slick-dots li.slick-active button {
+    border-color: #019ed3;
+    background: #fff;
+    /* background: #fff; */
+  }
+  .slick-dots li.button:hover:before,
+  .slick-dots li.slick-active button:before {
+    background-color: #fff;
+    opacity: 1;
+  }
+  .courses_first-text h4,
+  .courses_second-text h4 {
+    margin-top: 15px;
+  }
+  .courses_first-text p,
+  .courses_second-text p {
+    margin-top: 12px;
+  }
+
+  .courses_first-text .block_btn,
+  .courses_second-text .block_btn {
+    margin-top: 15px;
+  }
 }
 
 @media (min-width: 500px) and (max-width: 780px) { 
@@ -1705,4 +1649,27 @@ padding-left: 10px;
   .forms-data {
     margin: 5px;
   }
+}
+
+
+.formre {
+  display: none;
+}
+.formre.on.close {
+  display: none;
+}
+
+.formre.on {
+  position: fixed;
+  top: 100px;
+  right: 480px;
+  display: block;
+  background-color: tomato;
+  min-width: 350px;
+  min-height: 300px;
+  font-size: 16px;
+  color: #fff;
+  border: 2px solid silver;
+  border-radius: 50px;
+  text-align: center;
 }
